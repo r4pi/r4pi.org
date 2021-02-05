@@ -10,7 +10,7 @@ In addition, we provide access to pre-compiled versions of all the packages requ
 
 You must be running the official Raspberry Pi OS (previously called Raspbian) on your system and it must be up to date.
 
-Technically, the software should work on all version sof the Pi, however due to memory consdtraints with older versions and the Pi Zero, we Recommend a Raspberry Pi 4.
+Technically, the software should work on all version sof the Pi, however due to memory constraints with older versions and the Pi Zero, we Recommend a Raspberry Pi 4.
 
 ## Setting thigs up
 
