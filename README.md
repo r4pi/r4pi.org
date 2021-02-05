@@ -1,5 +1,7 @@
 # R4PI - R for the Raspberry Pi
 
+**Note:** This project is currently in very early alpha. Some testing has been performed, but not extensive testing at this time.
+
 The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry Pi computer.
 
 In addition, we provide access to pre-compiled versions of all the packages required to work through the [R for Data Science (R4DS) book](https://r4ds.had.co.nz) by Hadley Wickham and Garrett Grolemund.
