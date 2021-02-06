@@ -10,7 +10,16 @@ In addition, we provide access to pre-compiled versions of all the packages requ
 
 You must be running the official Raspberry Pi OS (previously called Raspbian) on your system and it must be up to date.
 
-Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions and the Pi Zero, we Recommend a Raspberry Pi 4.
+Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions and the Pi Zero, we therefore recommend a Raspberry Pi 4 with 2G or more of RAM.
+
+You can check your Raspberry Pi model with:
+
+```
+cat /sys/firmware/devicetree/base/model;echo
+```
+
+You are, of course, welcome to run the software on any Raspberry Pi, but you should expect poor performance on systems with low memory.
+
 
 ## Setting thigs up
 
