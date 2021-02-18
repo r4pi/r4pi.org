@@ -21,7 +21,7 @@ cat /sys/firmware/devicetree/base/model;echo
 You are, of course, welcome to run the software on any Raspberry Pi, but you should expect poor performance on systems with low memory.
 
 
-## Setting thigs up
+## Setting things up
 
 Before you can install the r4pi build of R, we need to do a couple of things to get ready.
 
