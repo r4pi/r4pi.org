@@ -1,0 +1,11 @@
+site_name: R4Pi.org
+repo_url: https://github.com/r4pi/r4pi.org
+docs_dir: content
+site_dir: docs
+theme: 
+  name: simplex
+nav:
+  - installation.md
+  - using_r.md
+  - next_steps.md
+footer: Hats

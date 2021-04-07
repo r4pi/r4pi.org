@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Installation - R4Pi.org</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-forest-light.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">R4Pi.org</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Installation</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../using_r/" class="nav-link">Using R on the Raspberry Pi</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../next_steps/" class="nav-link">Next steps</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../using_r/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/r4pi/r4pi.org/edit/master/docs/installation.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#installation" class="nav-link">Installation</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#pre-requisites" class="nav-link">Pre-requisites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#setting-things-up" class="nav-link">Setting things up</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#installing-the-software" class="nav-link">Installing the software</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#optional-extras" class="nav-link">Optional extras</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="installation">Installation</h1>
+<h2 id="pre-requisites">Pre-requisites</h2>
+<p>You must be running the official Raspberry Pi OS (previously called Raspbian) on your system and it must be up to date.</p>
+<p>Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions and the Pi Zero, we therefore recommend a Raspberry Pi 4 with 2G or more of RAM.</p>
+<p>You can check your Raspberry Pi model with:</p>
+<pre><code>cat /sys/firmware/devicetree/base/model;echo
+</code></pre>
+<p>You are, of course, welcome to run the software on any Raspberry Pi, but you should expect poor performance on systems with low memory.</p>
+<h2 id="setting-things-up">Setting things up</h2>
+<p>Before you can install the r4pi build of R, we need to do a couple of things to get ready.</p>
+<p>First we need to import the r4ds gpg encryption key. This allows your system to verify that the software you're installing comes from a trusted source.</p>
+<p>Open up and terminal and run:</p>
+<pre><code>curl http://debs.r4pi.org/r4pi.gpg.key | sudo apt-key add -
+</code></pre>
+<p>If you're copying and pasting, make sure you get the whole command, including the <code>-</code> on the end!</p>
+<p>You may be prompted for your password for the <code>sudo apt-key</code> part as this needs to be run as root.</p>
+<p>Now that your system trusts the r4pi repo, we need to configure your system to 'see' our repo.</p>
+<p>Run the following:</p>
+<pre><code>sudo nano /etc/apt/sources.list.d/r4pi.list
+</code></pre>
+<p>Paste the following into the screen that appears.</p>
+<pre><code>### r4pi.org - please don't edit this file unless you understand what it does ###
+deb http://debs.r4pi.org buster main
+</code></pre>
+<p>Once you're happy that it looks right, type ctrl+x to exit. You'll be asked if you want to save, say yes.</p>
+<h2 id="installing-the-software">Installing the software</h2>
+<p>Now that you've configured your system, we can go ahead and install the software.</p>
+<p>First update all your sources:</p>
+<pre><code>sudo apt update
+</code></pre>
+<p>You should see the new r4pi.org source in the output somewhere.</p>
+<p>Next install any updates that are available.</p>
+<pre><code>sudo apt upgrade
+</code></pre>
+<p>Finally, install the r4pi build of R.</p>
+<pre><code>sudo apt install r-r4pi
+</code></pre>
+<p>Assuming that's successful, you're now ready to start using R.</p>
+<p>You can start R by running:</p>
+<pre><code>/opt/R/4.0.3/bin/R
+</code></pre>
+<h2 id="optional-extras">Optional extras</h2>
+<p>If you want to make you're life a little easier you can make R start by just typing <code>R</code>. You should <strong>NOT</strong> do this if you have other versions of R installed already.</p>
+<pre><code>sudo ln -s /opt/R/4.0.3/bin/R /usr/bin/R
+sudo ln -s /opt/R/4.0.3/bin/Rscript /usr/bin/Rscript
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

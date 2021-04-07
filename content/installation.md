@@ -1,10 +1,5 @@
-# R4Pi - R for the Raspberry Pi
+# Installation
 
-**Note:** This project is currently in very early alpha. Some testing has been performed, but not extensive testing at this time.
-
-The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry Pi computer.
-
-In addition, we provide access to pre-compiled versions of all the packages required to work through the [R for Data Science (R4DS) book](https://r4ds.had.co.nz) by Hadley Wickham and Garrett Grolemund.
 
 ## Pre-requisites
 
@@ -95,25 +90,3 @@ If you want to make you're life a little easier you can make R start by just typ
 sudo ln -s /opt/R/4.0.3/bin/R /usr/bin/R
 sudo ln -s /opt/R/4.0.3/bin/Rscript /usr/bin/Rscript
 ```
-
-## Installing packages
-
-By deafult, our build of R uses the r4pi custom CRAN mirror for packages.
-
-You can see this by running the following inside of R:
-
-```
-options("repos")
-```
-
-This mirror is a little different from public CRAN. It currently offers a much reduced package set (all of which were sourced directly from CRAN itself) that are pre-compiled for the Raspberry Pi. Public CRAN only offer source code packages for Linux users which can make some packages difficult and time consuming to install. Our pre-compiled packages are an effort to make the installation process simpler.
-
-At present, the packages available should be adequate to work through the R4DS book -- our primary aim -- but may not contain enough packages for all users. In this case the user is welcome to switch back to using public CRAN.
-
-Packages are installed as usual using, for example:
-
-```
-install.packages("tidyverse")
-```
-
-
