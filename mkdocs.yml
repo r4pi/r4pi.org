@@ -8,4 +8,5 @@ nav:
   - installation.md
   - using_r.md
   - next_steps.md
-footer: Hats
+extra_css:
+  - css/extra.css
