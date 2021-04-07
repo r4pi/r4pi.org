@@ -1,4 +1,4 @@
-# R4Pi - R for the Raspberry Pi
+# R for the Raspberry Pi
 
 ![](images/r4pi-small.png)
 
@@ -12,7 +12,8 @@ R is the premier language for statistical computing and has millions of users ar
 
 There's already a build available for the Raspberry Pi in the default OS repos, but it's a quite an old version.
 
-We provide up-to-date builds of R and also take a number of the extension packages from CRAN and pre-compile them ready for use on the Pi to make installation fast and simple.
+We provide up-to-date builds of R and also take a number of the extension packages from CRAN and pre-compile them ready
+for use on the Pi to make installation fast and simple.
 
 ## R in action
 
