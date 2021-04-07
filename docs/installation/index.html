@@ -13,6 +13,7 @@
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-forest-light.min.css">
+        <link href="../css/extra.css" rel="stylesheet">
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
         <script src="../js/bootstrap.min.js" defer></script>
@@ -37,7 +38,7 @@
                                 <a href="./" class="nav-link">Installation</a>
                             </li>
                             <li class="navitem">
-                                <a href="../using_r/" class="nav-link">Using R on the Raspberry Pi</a>
+                                <a href="../using_r/" class="nav-link">Using R</a>
                             </li>
                             <li class="navitem">
                                 <a href="../next_steps/" class="nav-link">Next steps</a>
@@ -109,14 +110,17 @@
 <h1 id="installation">Installation</h1>
 <h2 id="pre-requisites">Pre-requisites</h2>
 <p>You must be running the official Raspberry Pi OS (previously called Raspbian) on your system and it must be up to date.</p>
-<p>Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions and the Pi Zero, we therefore recommend a Raspberry Pi 4 with 2G or more of RAM.</p>
+<p>Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions
+and the Pi Zero, we therefore recommend a Raspberry Pi 4 with 2G or more of RAM.</p>
 <p>You can check your Raspberry Pi model with:</p>
 <pre><code>cat /sys/firmware/devicetree/base/model;echo
 </code></pre>
-<p>You are, of course, welcome to run the software on any Raspberry Pi, but you should expect poor performance on systems with low memory.</p>
+<p>You are, of course, welcome to run the software on any Raspberry Pi, but you should expect poor performance on systems
+with low memory.</p>
 <h2 id="setting-things-up">Setting things up</h2>
 <p>Before you can install the r4pi build of R, we need to do a couple of things to get ready.</p>
-<p>First we need to import the r4ds gpg encryption key. This allows your system to verify that the software you're installing comes from a trusted source.</p>
+<p>First we need to import the r4ds gpg encryption key. This allows your system to verify that the software you're
+installing comes from a trusted source.</p>
 <p>Open up and terminal and run:</p>
 <pre><code>curl http://debs.r4pi.org/r4pi.gpg.key | sudo apt-key add -
 </code></pre>
@@ -148,7 +152,8 @@ deb http://debs.r4pi.org buster main
 <pre><code>/opt/R/4.0.3/bin/R
 </code></pre>
 <h2 id="optional-extras">Optional extras</h2>
-<p>If you want to make you're life a little easier you can make R start by just typing <code>R</code>. You should <strong>NOT</strong> do this if you have other versions of R installed already.</p>
+<p>If you want to make you're life a little easier you can make R start by just typing <code>R</code>. You should <strong>NOT</strong> do this if
+you have other versions of R installed already.</p>
 <pre><code>sudo ln -s /opt/R/4.0.3/bin/R /usr/bin/R
 sudo ln -s /opt/R/4.0.3/bin/Rscript /usr/bin/Rscript
 </code></pre></div>

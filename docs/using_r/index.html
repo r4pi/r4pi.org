@@ -8,11 +8,12 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Using R on the Raspberry Pi - R4Pi.org</title>
+        <title>Using R - R4Pi.org</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-forest-light.min.css">
+        <link href="../css/extra.css" rel="stylesheet">
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
         <script src="../js/bootstrap.min.js" defer></script>
@@ -37,7 +38,7 @@
                                 <a href="../installation/" class="nav-link">Installation</a>
                             </li>
                             <li class="navitem active">
-                                <a href="./" class="nav-link">Using R on the Raspberry Pi</a>
+                                <a href="./" class="nav-link">Using R</a>
                             </li>
                             <li class="navitem">
                                 <a href="../next_steps/" class="nav-link">Next steps</a>
@@ -81,7 +82,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#using-r-on-the-raspberry-pi" class="nav-link">Using R on the Raspberry Pi</a>
+            <li class="nav-item" data-level="1"><a href="#using-r" class="nav-link">Using R</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#installing-packages" class="nav-link">Installing packages</a>
               <ul class="nav flex-column">
@@ -94,14 +95,20 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="using-r-on-the-raspberry-pi">Using R on the Raspberry Pi</h1>
+<h1 id="using-r">Using R</h1>
+<p>R has it's own interactive REPL (<a href="https://en.wikipedia.org/wiki/Read–eval–print_loop">Read-eval-print loop</a>) and this
+is where many R users on Linux will start. </p>
 <h2 id="installing-packages">Installing packages</h2>
 <p>By deafult, our build of R uses the r4pi custom CRAN mirror for packages.</p>
 <p>You can see this by running the following inside of R:</p>
 <pre><code>options(&quot;repos&quot;)
 </code></pre>
-<p>This mirror is a little different from public CRAN. It currently offers a much reduced package set (all of which were sourced directly from CRAN itself) that are pre-compiled for the Raspberry Pi. Public CRAN only offer source code packages for Linux users which can make some packages difficult and time consuming to install. Our pre-compiled packages are an effort to make the installation process simpler.</p>
-<p>At present, the packages available should be adequate to work through the R4DS book -- our primary aim -- but may not contain enough packages for all users. In this case the user is welcome to switch back to using public CRAN.</p>
+<p>This mirror is a little different from public CRAN. It currently offers a much reduced package set (all of which were
+sourced directly from CRAN itself) that are pre-compiled for the Raspberry Pi. Public CRAN only offer source code
+packages for Linux users which can make some packages difficult and time consuming to install. Our pre-compiled
+packages are an effort to make the installation process simpler.</p>
+<p>At present, the packages available should be adequate to work through the R4DS book -- our primary aim -- but may not
+contain enough packages for all users. In this case the user is welcome to switch back to using public CRAN.</p>
 <p>Packages are installed as usual using, for example:</p>
 <pre><code>install.packages(&quot;tidyverse&quot;)
 </code></pre></div>
