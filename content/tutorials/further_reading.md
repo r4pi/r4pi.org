@@ -1,6 +1,13 @@
-# Next steps
+# Further Reading
 
 Now that you have R installed, you might be wondering what you can do with it?
+
+You've entered a whole world of programming with data. The R community is especially welcoming and vibrant, so no matter
+who you are, or what your background, you'll find a warm welcome awaits. 
+
+R users are often to be found on Twitter using the '[#rstats](https://twitter.com/search?q=%23rstats)' hashtag. It's
+also worth dropping by the [RStudio Commnity](https://community.rstudio.com/) site for help with R, particularly as it
+relates to any of RStudio's many open source packages.
 
 ## Understanding the basics
 
@@ -13,8 +20,8 @@ online, for free!
 
 ### ModernDive
 
-Another great book that's more statistics-heavy that you can read for free
-online is, "[Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com)"
+Another great book that's more statistics-heavy that you can read for free online is, 
+"[Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com)"
 (you can just call this one "ModernDive").
 
 ### Learning Statistics with R

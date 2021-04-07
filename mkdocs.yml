@@ -7,6 +7,8 @@ theme:
 nav:
   - installation.md
   - using_r.md
-  - next_steps.md
+  - Learning R:
+    - tutorials/index.md
+    - tutorials/further_reading.md
 extra_css:
   - css/extra.css
