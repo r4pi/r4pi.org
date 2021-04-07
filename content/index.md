@@ -2,9 +2,6 @@
 
 ![](images/r4pi-small.png)
 
-**Note:** This project is currently in very early alpha. Some testing has been performed, but not extensive testing at
-this time.
-
 The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry Pi computer.
 
 In addition, we provide access to pre-compiled versions of some of R's most popular packages.
@@ -15,7 +12,7 @@ R is the premier language for statistical computing and has millions of users ar
 
 There's already a build available for the Raspberry Pi in the default OS repos, but it's a quite an old version.
 
-We also take a number of the extension packages from CRAN and pre-compile them ready for use on the Pi.
+We provide up-to-date builds of R and also take a number of the extension packages from CRAN and pre-compile them ready for use on the Pi to make installation fast and simple.
 
 ## R in action
 
