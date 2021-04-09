@@ -6,6 +6,8 @@ The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry P
 
 In addition, we provide access to pre-compiled versions of some of R's most popular packages.
 
+**Note:** This project is currently in early beta stage, so you should expect to find the odd bug here and there.
+
 ## Background
 
 R is the premier language for statistical computing and has millions of users around the world.
