@@ -1,5 +1,6 @@
 site_name: R4Pi.org
 repo_url: https://github.com/r4pi/r4pi.org
+edit_uri: blob/main/content
 docs_dir: content
 site_dir: docs
 theme: 
