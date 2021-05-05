@@ -191,5 +191,5 @@ If you need to install a package that's not available in our mirror, you can sti
 to the list of available repos, or by specifying where a particular package should come from, like this:
 
 ```R
-install.packages(<PACKAGE_NAME>, repos = "https://cloud.r-project.org")
+> install.packages(<PACKAGE_NAME>, repos = "https://cloud.r-project.org")
 ```
