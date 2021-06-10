@@ -28,7 +28,7 @@ This is essentially the latest version of R available
 
 ## Setting things up
 
-Before you can install the r4pi build of R, we need configure access to the r4pi.org software repository.
+Before you can install the r4pi build of R, you need configure access to the r4pi.org software repository.
 
 ```bash
 curl -O  http://debs.r4pi.org/pool/main/r/r4pi-repo-conf/r4pi-repo-conf_0.1.0-5_armhf.deb
@@ -40,7 +40,7 @@ You're now ready to install our build of R.
 
 ## Installing the software
 
-Now that you've configured your system, we can go ahead and install the software.
+Now that you've configured your system, you can go ahead and install the software.
 
 First update all your sources:
 
@@ -50,7 +50,7 @@ sudo apt update
 
 You should see the new r4pi.org source in the output somewhere.
 
-Next install any updates that are available - note that this can take some time.
+Next, install any updates that are available, note that this can take some time.
 
 ```bash
 sudo apt upgrade
