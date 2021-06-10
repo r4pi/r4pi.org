@@ -122,19 +122,19 @@ with low memory.</p>
 <p>Our build of R tracks the <a href="https://r-project.org">R Project</a>'s current "release" version.</p>
 <p>This is essentially the latest version of R available</p>
 <h2 id="setting-things-up">Setting things up</h2>
-<p>Before you can install the r4pi build of R, we need configure access to the r4pi.org software repository.</p>
+<p>Before you can install the r4pi build of R, you need configure access to the r4pi.org software repository.</p>
 <pre><code class="language-bash">curl -O  http://debs.r4pi.org/pool/main/r/r4pi-repo-conf/r4pi-repo-conf_0.1.0-5_armhf.deb
 sudo dpkg -i  r4pi-repo-conf_0.1.0-5_armhf.deb
 sudo apt update
 </code></pre>
 <p>You're now ready to install our build of R.</p>
 <h2 id="installing-the-software">Installing the software</h2>
-<p>Now that you've configured your system, we can go ahead and install the software.</p>
+<p>Now that you've configured your system, you can go ahead and install the software.</p>
 <p>First update all your sources:</p>
 <pre><code class="language-bash">sudo apt update
 </code></pre>
 <p>You should see the new r4pi.org source in the output somewhere.</p>
-<p>Next install any updates that are available - note that this can take some time.</p>
+<p>Next, install any updates that are available, note that this can take some time.</p>
 <pre><code class="language-bash">sudo apt upgrade
 </code></pre>
 <p>Finally, install the r4pi build of R.</p>
