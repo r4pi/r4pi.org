@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>None</loc>
-     <lastmod>2021-05-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>None</loc>
-     <lastmod>2021-05-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>None</loc>
-     <lastmod>2021-05-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https:/r4pi.org/using_r.html</loc>
+    <lastmod>2021-06-09T23:06:17.564Z</lastmod>
+  </url>
+  <url>
+    <loc>https:/r4pi.org/index.html</loc>
+    <lastmod>2021-06-09T23:06:17.787Z</lastmod>
+  </url>
+  <url>
+    <loc>https:/r4pi.org/tutorials/index.html</loc>
+    <lastmod>2021-06-09T23:06:18.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https:/r4pi.org/tutorials/further_reading.html</loc>
+    <lastmod>2021-06-09T23:06:18.212Z</lastmod>
+  </url>
+  <url>
+    <loc>https:/r4pi.org/installation.html</loc>
+    <lastmod>2021-06-09T23:06:18.417Z</lastmod>
+  </url>
 </urlset>

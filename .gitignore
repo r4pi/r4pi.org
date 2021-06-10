@@ -1,2 +1,6 @@
 venv
 .DS_Store
+
+/.quarto/
+*_cache/
+.ipynb_checkpoints/

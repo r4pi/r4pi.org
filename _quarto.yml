@@ -1,0 +1,26 @@
+project:
+  type: site
+  output-dir: docs
+
+site:
+  title: "R4Pi.org"
+  site-url: https://r4pi.org
+  repo-url: https://github.com/r4pi/r4pi.org
+  repo-actions: [edit, issue]
+  navbar:
+    type: dark
+    background: primary
+    search: true
+    left:
+      - href: installation.md
+        text: Installation
+      - href: using_r.md
+        text: Using R
+      - href: tutorials/further_reading.md
+        text: Further Reading
+
+format:
+  html:
+    theme: simplex
+    css: css/extra.css
+    toc: true
