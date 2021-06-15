@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>R4Pi.org</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Installation - R4Pi.org</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-forest-light.min.css">
-        <link href="css/extra.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">R4Pi.org</a>
+                <a class="navbar-brand" href="../..">R4Pi.org</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,25 +34,25 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="docs/installation/" class="dropdown-item">Installation</a>
+    <a href="./" class="dropdown-item active">Installation</a>
 </li>
                                     
 <li>
-    <a href="docs/using_r/" class="dropdown-item">Using R</a>
+    <a href="../using_r/" class="dropdown-item">Using R</a>
 </li>
                                     
 <li>
-    <a href="docs/install_packages/" class="dropdown-item">Installing packages</a>
+    <a href="../install_packages/" class="dropdown-item">Installing packages</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="tutorials/further_reading/" class="nav-link">Further Reading</a>
+                                <a href="../../tutorials/further_reading/" class="nav-link">Further Reading</a>
                             </li>
                         </ul>
 
@@ -63,7 +63,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/r4pi/r4pi.org/blob/main/content/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../using_r/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/r4pi/r4pi.org/blob/main/content/docs/installation.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -83,17 +93,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#r-for-the-raspberry-pi" class="nav-link">R for the Raspberry Pi</a>
+            <li class="nav-item" data-level="1"><a href="#installation" class="nav-link">Installation</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#background" class="nav-link">Background</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#r-in-action" class="nav-link">R in action</a>
+            <li class="nav-item" data-level="2"><a href="#pre-requisites" class="nav-link">Pre-requisites</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#installation" class="nav-link">Installation</a>
+            <li class="nav-item" data-level="2"><a href="#about-the-r4pi-r-biuld" class="nav-link">About the r4pi R biuld</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#setting-things-up" class="nav-link">Setting things up</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#installing-the-software" class="nav-link">Installing the software</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -104,24 +118,44 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="r-for-the-raspberry-pi">R for the Raspberry Pi</h1>
-<p><img alt="" src="images/r4pi-small.png" /></p>
-<p>The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry Pi computer.</p>
-<p>In addition, we provide access to pre-compiled versions of some of R's most popular packages.</p>
-<p><strong>Note:</strong> This project is currently in early beta stage, so you should expect to find the odd bug here and there.</p>
-<h2 id="background">Background</h2>
-<p>R is the premier language for statistical computing and has millions of users around the world.</p>
-<p>There's already a build available for the Raspberry Pi in the default OS repos, but it's a quite an old version.</p>
-<p>We provide up-to-date builds of R and also take a number of the extension packages from CRAN and pre-compile them ready
-for use on the Pi to make installation fast and simple.</p>
-<h2 id="r-in-action">R in action</h2>
-<p>It's possible to write R code in any text editor and a number of the text editors and IDEs available for the Pi support
-R either straight out-of-the-box or, as in the VSCode screenshot below, with the addition of a plugin.</p>
-<p><img alt="" src="images/r4pi-vscode-penguins.png" /></p>
-<p>The screenshot above shows some of the analytical and plotting capabilities of R with code borrowed from the 
-<a href="https://allisonhorst.github.io/palmerpenguins/">"palmerpenguins" package website</a>.</p>
-<h2 id="installation">Installation</h2>
-<p>Now you know what the project is all about, it's time to move on to <a href="docs/installation/">installation</a>.</p></div>
+<h1 id="installation">Installation</h1>
+<h2 id="pre-requisites">Pre-requisites</h2>
+<p>You must be running the official <a href="https://www.raspberrypi.org/software/operating-systems/">Raspberry Pi OS</a>
+(previously called Raspbian) on your system and it must be up to date.</p>
+<p>Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions
+and the Pi Zero, <strong>we recommend a Raspberry Pi 4 with 2G or more</strong> of RAM.</p>
+<p>You can check your Raspberry Pi model in a terminal with:</p>
+<pre><code class="language-bash">cat /sys/firmware/devicetree/base/model;echo
+</code></pre>
+<p>You are, of course, welcome to run the software on any Raspberry Pi, but you should expect poor performance on systems
+with low memory.</p>
+<h2 id="about-the-r4pi-r-biuld">About the r4pi R biuld</h2>
+<p>Our build of R tracks the <a href="https://r-project.org">R Project</a>'s current "release" version.</p>
+<p>This is essentially the latest version of R available</p>
+<h2 id="setting-things-up">Setting things up</h2>
+<p>Before you can install the r4pi build of R, you need configure access to the r4pi.org software repository.</p>
+<pre><code class="language-bash">curl -O  http://debs.r4pi.org/pool/main/r/r4pi-repo-conf/r4pi-repo-conf_0.1.0-5_armhf.deb
+sudo dpkg -i  r4pi-repo-conf_0.1.0-5_armhf.deb
+sudo apt update
+</code></pre>
+<p>You're now ready to install our build of R.</p>
+<h2 id="installing-the-software">Installing the software</h2>
+<p>Now that you've configured your system, you can go ahead and install the software.</p>
+<p>First update all your sources:</p>
+<pre><code class="language-bash">sudo apt update
+</code></pre>
+<p>You should see the new r4pi.org source in the output somewhere.</p>
+<p>Next, install any updates that are available, note that this can take some time.</p>
+<pre><code class="language-bash">sudo apt upgrade
+</code></pre>
+<p>Finally, install the r4pi build of R.</p>
+<pre><code class="language-bash">sudo apt install r4pi
+</code></pre>
+<p>Assuming that's successful, you're now ready to start using R.</p>
+<p>You can start R by running:</p>
+<pre><code class="language-bash">R
+</code></pre>
+<p>Type ctrl+d twice to exit.</p></div>
             </div>
         </div>
 
@@ -130,11 +164,11 @@ R either straight out-of-the-box or, as in the VSCode screenshot below, with the
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -202,8 +236,3 @@ R either straight out-of-the-box or, as in the VSCode screenshot below, with the
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.1.2
-Build Date UTC : 2021-06-15 16:22:59.837230+00:00
--->

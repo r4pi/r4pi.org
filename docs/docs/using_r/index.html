@@ -7,16 +7,16 @@
         
         
         
-        <link rel="shortcut icon" href="../img/favicon.ico">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>Using R - R4Pi.org</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-forest-light.min.css">
-        <link href="../css/extra.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
 
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">R4Pi.org</a>
+                <a class="navbar-brand" href="../..">R4Pi.org</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,14 +34,25 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../installation/" class="nav-link">Installation</a>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../installation/" class="dropdown-item">Installation</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Using R</a>
+</li>
+                                    
+<li>
+    <a href="../install_packages/" class="dropdown-item">Installing packages</a>
+</li>
+                                </ul>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">Using R</a>
-                            </li>
                             <li class="navitem">
-                                <a href="../tutorials/further_reading/" class="nav-link">Further Reading</a>
+                                <a href="../../tutorials/further_reading/" class="nav-link">Further Reading</a>
                             </li>
                         </ul>
 
@@ -57,12 +68,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../tutorials/further_reading/" class="nav-link">
+                                <a rel="next" href="../install_packages/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/r4pi/r4pi.org/blob/main/content/using_r.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/r4pi/r4pi.org/blob/main/content/docs/using_r.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -89,10 +100,6 @@
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#the-basics" class="nav-link">The basics</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#installing-packages" class="nav-link">Installing packages</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -201,28 +208,7 @@ Save workspace image? [y/n/c]: n
 and packages that you've loaded. It's generally considered bad practice to save the workspace, as it can get us
 into trouble later on, so always answer with "n".</p>
 <p>Eventually, even this might feel like too much typing and someone will point out that you can accomplish the same thing
-by pressing "ctrl+d" twice, so feel free to do that instead if you prefer.</p>
-<h2 id="installing-packages">Installing packages</h2>
-<p>In the R world, add-on packages that provide useful functions or otherwise extend the language in some way, come from
-<a href="https://cran.r-project.org">CRAN</a>. CRAN serves pre-compiled binaries of these packages to Mac and Windows users, but
-Linux users (like us!) only get the source code.</p>
-<p>This makes sense as there are a very large number of Linux distributions out there and compiling binaries for all of
-them isn't feasible. Source code is the default for all Linux OSes then, but it can also be difficult to work with. As
-an end user, having to compile packages from source can be time consuming and packages also often require specific
-build-time system dependencies that you'd need to make sure were installed before attempting to build the package.</p>
-<p>To make this process easier, the R4Pi project runs it's own CRAN mirror that only contains a small subset of some of the
-most popular packages available in the public CRAN. Since we know exactly which version of Linux you'll be using, we're
-able to compile packages for you, making installation simpler and much quicker!</p>
-<p>You can see the default mirror by running the following inside of R:</p>
-<pre><code class="language-R">&gt; options(&quot;repos&quot;)
-</code></pre>
-<p>Packages are installed as usual using, for example:</p>
-<pre><code class="language-R">&gt; install.packages(&quot;tidyverse&quot;)
-</code></pre>
-<p>If you need to install a package that's not available in our mirror, you can still use public CRAN, either by adding it
-to the list of available repos, or by specifying where a particular package should come from, like this:</p>
-<pre><code class="language-R">&gt; install.packages(&lt;PACKAGE_NAME&gt;, repos = &quot;https://cloud.r-project.org&quot;)
-</code></pre></div>
+by pressing "ctrl+d" twice, so feel free to do that instead if you prefer.</p></div>
             </div>
         </div>
 
@@ -231,11 +217,11 @@ to the list of available repos, or by specifying where a particular package shou
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "..",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
