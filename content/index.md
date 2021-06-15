@@ -26,3 +26,8 @@ R either straight out-of-the-box or, as in the VSCode screenshot below, with the
 
 The screenshot above shows some of the analytical and plotting capabilities of R with code borrowed from the 
 ["palmerpenguins" package website](https://allisonhorst.github.io/palmerpenguins/).
+
+## Installation
+
+Now you know what the project is all about, it's time to move on to [installation](docs/installation.md).
+
