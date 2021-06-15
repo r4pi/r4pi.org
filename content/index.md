@@ -22,7 +22,7 @@ for use on the Pi to make installation fast and simple.
 It's possible to write R code in any text editor and a number of the text editors and IDEs available for the Pi support
 R either straight out-of-the-box or, as in the VSCode screenshot below, with the addition of a plugin.
 
-![](images/r4pi-vscode-penguins.png)
+![](docs/images/r4pi-vscode-penguins.png)
 
 The screenshot above shows some of the analytical and plotting capabilities of R with code borrowed from the 
 ["palmerpenguins" package website](https://allisonhorst.github.io/palmerpenguins/).

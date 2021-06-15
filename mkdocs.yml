@@ -10,6 +10,7 @@ nav:
     - docs/installation.md
     - docs/using_r.md
     - docs/install_packages.md
+    - docs/ide.md
   - tutorials/further_reading.md
 extra_css:
   - css/extra.css

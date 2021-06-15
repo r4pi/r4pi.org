@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>R4Pi.org</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Using an IDE - R4Pi.org</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-forest-light.min.css">
-        <link href="css/extra.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">R4Pi.org</a>
+                <a class="navbar-brand" href="../..">R4Pi.org</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,29 +34,29 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="docs/installation/" class="dropdown-item">Installation</a>
+    <a href="../installation/" class="dropdown-item">Installation</a>
 </li>
                                     
 <li>
-    <a href="docs/using_r/" class="dropdown-item">Using R</a>
+    <a href="../using_r/" class="dropdown-item">Using R</a>
 </li>
                                     
 <li>
-    <a href="docs/install_packages/" class="dropdown-item">Installing packages</a>
+    <a href="../install_packages/" class="dropdown-item">Installing packages</a>
 </li>
                                     
 <li>
-    <a href="docs/ide/" class="dropdown-item">Using an IDE</a>
+    <a href="./" class="dropdown-item active">Using an IDE</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="tutorials/further_reading/" class="nav-link">Further Reading</a>
+                                <a href="../../tutorials/further_reading/" class="nav-link">Further Reading</a>
                             </li>
                         </ul>
 
@@ -67,7 +67,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/r4pi/r4pi.org/blob/main/content/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a rel="prev" href="../install_packages/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../tutorials/further_reading/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/r4pi/r4pi.org/blob/main/content/docs/ide.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -87,17 +97,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#r-for-the-raspberry-pi" class="nav-link">R for the Raspberry Pi</a>
+            <li class="nav-item" data-level="1"><a href="#using-an-ide" class="nav-link">Using an IDE</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#background" class="nav-link">Background</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#r-in-action" class="nav-link">R in action</a>
+            <li class="nav-item" data-level="2"><a href="#what-is-an-ide" class="nav-link">What is an IDE?</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#installation" class="nav-link">Installation</a>
+            <li class="nav-item" data-level="2"><a href="#installing-vscode" class="nav-link">Installing VSCode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#configuring-vscode-for-r" class="nav-link">Configuring VSCode for R</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#using-vscode-to-write-r" class="nav-link">Using VSCode to write R</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -108,24 +122,41 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="r-for-the-raspberry-pi">R for the Raspberry Pi</h1>
-<p><img alt="" src="images/r4pi-small.png" /></p>
-<p>The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry Pi computer.</p>
-<p>In addition, we provide access to pre-compiled versions of some of R's most popular packages.</p>
-<p><strong>Note:</strong> This project is currently in early beta stage, so you should expect to find the odd bug here and there.</p>
-<h2 id="background">Background</h2>
-<p>R is the premier language for statistical computing and has millions of users around the world.</p>
-<p>There's already a build available for the Raspberry Pi in the default OS repos, but it's a quite an old version.</p>
-<p>We provide up-to-date builds of R and also take a number of the extension packages from CRAN and pre-compile them ready
-for use on the Pi to make installation fast and simple.</p>
-<h2 id="r-in-action">R in action</h2>
-<p>It's possible to write R code in any text editor and a number of the text editors and IDEs available for the Pi support
-R either straight out-of-the-box or, as in the VSCode screenshot below, with the addition of a plugin.</p>
-<p><img alt="" src="docs/images/r4pi-vscode-penguins.png" /></p>
-<p>The screenshot above shows some of the analytical and plotting capabilities of R with code borrowed from the 
-<a href="https://allisonhorst.github.io/palmerpenguins/">"palmerpenguins" package website</a>.</p>
-<h2 id="installation">Installation</h2>
-<p>Now you know what the project is all about, it's time to move on to <a href="docs/installation/">installation</a>.</p></div>
+<h1 id="using-an-ide">Using an IDE</h1>
+<h2 id="what-is-an-ide">What is an IDE?</h2>
+<p>An IDE or "Integrated Development Environment" is a special kind of text editor, targeted specifically at computer
+programming.</p>
+<p>In princilple, you can write code in anything that will save plain text, however, an IDE will generally offer the
+programmer useful features like syntax highlighting and a way to execute code from a source code file one line at
+a time.</p>
+<p>So, an IDE will make you more productive as a developer. How do you get one?</p>
+<h2 id="installing-vscode">Installing VSCode</h2>
+<p>Microsoft recently made the excellent <a href="https://code.visualstudio.com">Visual Studio Code</a> IDE (also know as VSCode) 
+available for the Raspberry Pi. It's not much use for writing R out of the box, but we can install a plugin to fix that.</p>
+<p>You can install it from the default Raspberry Pi repos using the "Add/Remove software" app.</p>
+<p>Search for "code" or find it in the "Programming" section.</p>
+<p><img alt="Add/Remove software" src="../images/add-remove-software.png" /></p>
+<p>Once VSCode is installed we need to configure it for use with R.</p>
+<h2 id="configuring-vscode-for-r">Configuring VSCode for R</h2>
+<p>In order to use VSCode with R, you need to install a plugin. Right now, we recommend the excellent "R" plugin from
+Yuki Ueda.</p>
+<p>To install it, follow these steps:</p>
+<ul>
+<li>open VSCode</li>
+<li>click the "Extensions" button on the left</li>
+<li>Search for "R"</li>
+<li>Select the "R" extension by Yuki Ueda</li>
+<li>Click the "install" button</li>
+</ul>
+<p><img alt="Install the R plugin for VSCode" src="../images/vscode-r-extension.png" /></p>
+<p>Once the plugin is installed, you're ready to start using it.</p>
+<h2 id="using-vscode-to-write-r">Using VSCode to write R</h2>
+<p>Now that the plugin is installed, VSCode will automatically do syntax highlighting for us for files that have the ".R"
+extension.
+In addition, if you place your cursor on a particular line in an R file and press ctrl+enter, that line will be executed
+in an R console and the cursor will move to the next line. You can use this to step through a file one line at a time.</p>
+<p><img alt="Syntax highlighting and a plot created in VSCode" src="../images/r4pi-vscode-penguins.png" /></p>
+<p>You can read more about the R plugin's features on the extensions "Details" page in VSCode.</p></div>
             </div>
         </div>
 
@@ -134,11 +165,11 @@ R either straight out-of-the-box or, as in the VSCode screenshot below, with the
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -206,8 +237,3 @@ R either straight out-of-the-box or, as in the VSCode screenshot below, with the
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.1.2
-Build Date UTC : 2021-06-15 19:57:26.916276+00:00
--->
