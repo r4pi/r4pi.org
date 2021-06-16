@@ -50,4 +50,4 @@ in an R console and the cursor will move to the next line. You can use this to s
 
 ![Syntax highlighting and a plot created in VSCode](images/r4pi-vscode-penguins.png)
 
-You can read more about the R plugin's features on the extensions "Details" page in VSCode.
+You can read more about the R plugin's features on the extension's "Details" page in VSCode.
