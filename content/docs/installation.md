@@ -19,7 +19,7 @@ You are, of course, welcome to run the software on any Raspberry Pi, but you sho
 with low memory.
 
 
-## About the r4pi R biuld
+## About the r4pi R build
 
 Our build of R tracks the [R Project](https://r-project.org)'s current "release" version.
 
