@@ -31,8 +31,8 @@ This is essentially the latest version of R available
 Before you can install the r4pi build of R, you need configure access to the r4pi.org software repository.
 
 ```bash
-curl -O  http://debs.r4pi.org/pool/main/r/r4pi-repo-conf/r4pi-repo-conf_0.1.0-5_armhf.deb
-sudo dpkg -i  r4pi-repo-conf_0.1.0-5_armhf.deb
+curl -O  http://debs.r4pi.org/pool/main/r/r4pi-repo-conf/r4pi-repo-conf_0.1.0-6_armhf.deb
+sudo dpkg -i  r4pi-repo-conf_0.1.0-6_armhf.deb
 sudo apt update
 ```
 

@@ -5,7 +5,11 @@
 R has it's own interactive REPL ([Read-eval-print loop](https://en.wikipedia.org/wiki/Read–eval–print_loop)) and this
 is where many R users on Linux will start.
 
-Opening a terminal and typing `R` at the command prompt will start the REPL.
+There are two ways to start R. If you're using the Raspberry Pi OS desktop, you can start R through the menu as shown below.
+
+![R4Pi menu item on Raspberry PI OS](images/r4pi_menu.png)
+
+Alternatively, you can start an interactive R session via the terminal, by typing `R` at the command prompt.
 
 ```bash
 sellorm@raspberrypi $ R

@@ -1,16 +1,29 @@
 # R4Pi - R for the Raspberry Pi
 
-**Note:** This project is currently in very early alpha. Some testing has been performed, but not extensive testing at this time.
+This repo contains the source for the [r4pi.org](https://r4pi.org) website.
+
 
 The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry Pi computer.
 
-In addition, we provide access to pre-compiled versions of all the packages required to work through the [R for Data Science (R4DS) book](https://r4ds.had.co.nz) by Hadley Wickham and Garrett Grolemund.
+In addition, we provide access to pre-compiled binary versions of many of the packages available from CRAN.
 
 ## Pre-requisites
 
-You must be running the official Raspberry Pi OS (previously called Raspbian) on your system and it must be up to date.
+You must be running the official Raspberry Pi OS (previously called Raspbian) on your system and it must be up to date. At the time of writing, the latest version is referred to as "Bullseye".
 
-Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions and the Pi Zero, we therefore recommend a Raspberry Pi 4 with 2G or more of RAM.
+You can check your OS version with:
+
+```
+cat /etc/os-release
+```
+
+You can update the installed packages with:
+
+```
+sudo apt update && sudo apt upgrade
+```
+
+Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions and the Pi Zero, we therefore a Raspberry Pi 4 with 2G or more of RAM.
 
 You can check your Raspberry Pi model with:
 
@@ -75,7 +88,7 @@ sudo apt upgrade
 Finally, install the r4pi build of R.
 
 ```
-sudo apt install r-r4pi
+sudo apt install r4pi
 ```
 
 Assuming that's successful, you're now ready to start using R.
@@ -83,18 +96,9 @@ Assuming that's successful, you're now ready to start using R.
 You can start R by running:
 
 ```
-/opt/R/4.0.3/bin/R
+R
 ```
 
-
-## Optional extras
-
-If you want to make you're life a little easier you can make R start by just typing `R`. You should **NOT** do this if you have other versions of R installed already.
-
-```
-sudo ln -s /opt/R/4.0.3/bin/R /usr/bin/R
-sudo ln -s /opt/R/4.0.3/bin/Rscript /usr/bin/Rscript
-```
 
 ## Installing packages
 
@@ -116,4 +120,36 @@ Packages are installed as usual using, for example:
 install.packages("tidyverse")
 ```
 
+## The r4pi.org website
+
+The website is built using mkdocs and mkdocs-material.
+
+Create a virtual environment for the project.
+
+```
+python3 -m venv venv
+```
+
+activate the virtual environment:
+
+```
+source venv/bin/activate
+```
+
+Install the required dependencies:
+
+```
+python3 -m pip install -r requirements.txt
+```
+
+The site can then be edited as required.
+
+**Note:** Because the site is served from GitHub Pages, the source files are in
+`content` and the generated html is in `docs`.
+
+The build the site after changes, run:
+
+```
+mkdocs build
+```
 

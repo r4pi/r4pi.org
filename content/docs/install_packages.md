@@ -17,6 +17,11 @@ To make this process easier, the R4Pi project runs it's own CRAN mirror that onl
 most popular packages available in the public CRAN. Since we know exactly which version of Linux you'll be using, we're
 able to compile packages for you, making installation simpler and much quicker!
 
+You can see a list of the pre-built packages that are available through the project on the
+[R4Pi packages list](https://pkgs.r4pi.org). Additional packages are added to the project from time to time, but if you
+have a specific need you can [raise an issue](https://github.com/r4pi/pkg_builder/issues) on the GitHub project and
+we'll try to accomodate your request.
+
 ## Installation
 
 You can see the default mirror by running the following inside of R:
