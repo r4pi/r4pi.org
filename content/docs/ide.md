@@ -26,15 +26,17 @@ Once VSCode is installed we need to configure it for use with R.
 
 ## Configuring VSCode for R
 
-In order to use VSCode with R, you need to install a plugin. Right now, we recommend the excellent "R" plugin from
-Yuki Ueda.
+In order to use VSCode with R, you need to install a plugin. Right now, we recommend the excellent "R" plugin
+from the "REditorSupport" team.
+
+If you're interested, you'll find the code repositories for this group's work [on GitHub](https://github.com/REditorSupport).
 
 To install it, follow these steps:
 
 * open VSCode
 * click the "Extensions" button on the left
 * Search for "R"
-* Select the "R" extension by Yuki Ueda
+* Select the "R" extension by REditorSupport
 * Click the "install" button
 
 ![Install the R plugin for VSCode](images/vscode-r-extension.png)
