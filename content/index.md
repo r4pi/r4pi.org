@@ -2,11 +2,9 @@
 
 ![](images/r4pi-small.png)
 
-The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry Pi computer.
+The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry Pi family of computers.
 
-In addition, we provide access to pre-compiled versions of some of R's most popular packages.
-
-**Note:** This project is currently in early beta stage, so you should expect to find the odd bug here and there.
+In addition, we provide access to pre-compiled versions of _some_ of R's most popular packages.
 
 ## Background
 
@@ -31,3 +29,6 @@ The screenshot above shows some of the analytical and plotting capabilities of R
 
 Now you know what the project is all about, it's time to move on to [installation](docs/installation.md).
 
+## Follow us on Mastodon
+
+You'll find us on the fosstodon.org server, <a rel="me" href="https://fosstodon.org/@r4pi">here</a>.
