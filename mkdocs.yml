@@ -4,13 +4,42 @@ edit_uri: blob/main/content
 docs_dir: content
 site_dir: docs
 theme: 
-  name: simplex
+  name: material
+  logo: images/r4pi-small.png
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: light
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 nav:
   - Documentation:
     - docs/installation.md
     - docs/using_r.md
     - docs/install_packages.md
     - docs/ide.md
-  - tutorials/further_reading.md
+    - docs/further_reading.md
+  - news/index.md
 extra_css:
   - css/extra.css
+copyright: Copyright &copy; 2023 The R4Pi Team
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@r4pi
+      name: R4Pi on Fosstodon
+    - icon: fontawesome/brands/github
+      link: https://github.com/r4pi
+      name: R4Pi on GitHub
