@@ -1,6 +1,8 @@
 # R for the Raspberry Pi
 
-![](images/r4pi-small.png)
+<figure markdown>
+![R4Pi Logo](images/r4pi-small.png)
+</figure>
 
 The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry Pi family of computers.
 
