@@ -5,8 +5,14 @@
   --md-primary-fg-color--dark:  #ab1942;
 }
 .md-typeset {
-  font-size: 1rem;
+  font-size: 0.9rem;
+}
+.md-typeset a {
+  color: #ed254d;
 }
 .md-nav {
   font-size: 1rem;
+}
+.md-nav__item .md-nav__link--active {
+  color: #ed254d
 }
