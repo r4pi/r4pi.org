@@ -7,6 +7,7 @@ site_dir: docs
 theme: 
   name: material
   logo: images/r4pi-small-white.png
+  language: en
   features:
     - content.action.edit
     - content.action.view
