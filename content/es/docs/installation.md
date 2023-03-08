@@ -1,34 +1,28 @@
-# Installation
+# Instalación
 
+## Prerrequisitos
 
-## Pre-requisites
+Debes estar ejecutando el [Sistema Operativo Raspberry Pi](https://www.raspberrypi.org/software/operating-systems/) oficial (anteriormente llamado Raspbian) en tu sistema y debe estar actualizado.
 
-You must be running the official [Raspberry Pi OS](https://www.raspberrypi.org/software/operating-systems/)
-(previously called Raspbian) on your system and it must be up to date.
+Técnicamente, el software debería funcionar en todas las versiones de Pi, sin embargo, debido a limitaciones de memoria con versiones anteriores y la Pi Zero, **recomendamos una Raspberry Pi 4 con 2G o más** de RAM.
 
-Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions
-and the Pi Zero, **we recommend a Raspberry Pi 4 with 2G or more** of RAM.
-
-You can check your Raspberry Pi model in a terminal with:
+Puedes consultar tu modelo de Raspberry Pi en una terminal con:
 
 ```bash
 cat /sys/firmware/devicetree/base/model;echo
 ```
 
-You are, of course, welcome to run the software on any Raspberry Pi, but you should expect poor performance on systems
-with low memory.
+Por supuesto, puedes ejecutar el software en cualquier Raspberry Pi, pero debes esperar un rendimiento deficiente en los sistemas con poca memoria.
 
+## Acerca de la compilación R de r4pi
 
-## About the r4pi R build
+Nuestra compilación de R rastrea la versión de "lanzamiento" actual del [Proyecto R](https://r-project.org).
 
-Our build of R tracks the [R Project](https://r-project.org)'s current "release" version.
+Esta es esencialmente la última versión de R disponible
 
-This is essentially the latest version of R available
+## Configurando las cosas
 
-
-## Setting things up
-
-Before you can install the r4pi build of R, you need configure access to the r4pi.org software repository.
+Antes de poder instalar la compilación r4pi de R, debe configurar el acceso al repositorio de software r4pi.org.
 
 ```bash
 curl -O  https://pkgs.r4pi.org/dl/r4pi-repo-conf_0.0.1-1_all.deb
@@ -36,38 +30,38 @@ sudo dpkg -i  r4pi-repo-conf_0.0.1-1_all.deb
 sudo apt update
 ```
 
-You're now ready to install our build of R.
+Ahora estás listo para instalar nuestra compilación de R
 
-## Installing the software
+## Instalación del programa
 
-Now that you've configured your system, you can go ahead and install the software.
+Ahora que has configurado tu sistema, puedes continuar e instalar el software.
 
-First update all your sources:
+Primero actualiza todas tus fuentes:
 
 ```bash
 sudo apt update
 ```
 
-You should see the new r4pi.org source in the output somewhere.
+Deberías ver la nueva fuente r4pi.org en la salida de consola en alguna parte.
 
-Next, install any updates that are available, note that this can take some time.
+A continuación, instala las actualizaciones que estén disponibles, ten en cuenta que esto puede llevar algún tiempo.
 
 ```bash
 sudo apt upgrade
 ```
 
-Finally, install the r4pi build of R.
+Finalmente, instala la compilación r4pi de R.
 
 ```bash
 sudo apt install r4pi
 ```
 
-Assuming that's successful, you're now ready to start using R.
+Suponiendo que todo salió bien, ahora estás listo para comenzar a usar R.
 
-You can start R by running:
+Puedes iniciar R ejecutando:
 
 ```bash
 R
 ```
 
-Type ctrl+d twice to exit.
+Teclea ctrl+d dos veces para salir.

@@ -1,9 +1,8 @@
-# News
+# Noticias
 
-## 2022-03-4 - Updated website
+## 2022-03-4 - Sitio web actualizado
 
-We've just updated the website from vanilla [mkdocs](https://www.mkdocs.org/) to [mkdocs material](https://squidfunk.github.io/mkdocs-material/).
-On the surface, this might seem like a minor change, but it will allow us to be a lot more flexible with the site in the future. Hopefully you'll like the new dark mode too.
+Acabamos de actualizar el sitio web de "vanilla" [mkdocs](https://www.mkdocs.org/) a [mkdocs material](https://squidfunk.github.io/mkdocs-material/). A primera vista, esto puede parecer un cambio menor, pero nos permitirá ser mucho más flexibles con el sitio en el futuro. Con suerte, también te gustará el nuevo modo oscuro.
 
 ---
 

@@ -1,165 +1,145 @@
-# Using R
+# Usando R
 
-## Starting R
+## Iniciando R
 
-R has it's own interactive REPL ([Read-eval-print loop](https://en.wikipedia.org/wiki/Read–eval–print_loop)) and this
-is where many R users on Linux will start.
+R tiene su propio REPL ([Read-eval-print loop](https://en.wikipedia.org/wiki/Read–eval–print_loop)) interactivo y aquí es donde muchos usuarios de R en Linux comenzarán.
 
-There are two ways to start R. If you're using the Raspberry Pi OS desktop, you can start R through the menu as shown below.
+Hay dos formas de iniciar R. Si estás utilizando el escritorio del sistema operativo Raspberry Pi, puedes iniciar R a través del menú como se muestra a continuación.
 
-![R4Pi menu item on Raspberry PI OS](/docs/images/r4pi_menu.png)
+![Elemento de menú R4Pi en Raspberry PI OS](/docs/images/r4pi_menu.png)
 
-Alternatively, you can start an interactive R session via the terminal, by typing `R` at the command prompt.
+Alternativamente, puedes iniciar una sesión R interactiva a través de la terminal, escribiendo `R` en el símbolo del sistema.
 
 ```bash
 sellorm@raspberrypi $ R
 
-R version 4.0.4 (2021-02-15) -- "Lost Library Book"
-Copyright (C) 2021 The R Foundation for Statistical Computing
-Platform: armv7l-unknown-linux-gnueabihf (32-bit)
+R version 4.2.2 (2022-10-31) -- "Innocent and Trusting"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
 
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
+R es un software libre y viene sin GARANTIA ALGUNA.
+Usted puede redistribuirlo bajo ciertas circunstancias.
+Escriba 'license()' o 'licence()' para detalles de distribucion.
 
-  Natural language support but running in an English locale
+R es un proyecto colaborativo con muchos contribuyentes.
+Escriba 'contributors()' para obtener más información y
+'citation()' para saber cómo citar R o paquetes de R en publicaciones.
 
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
+Escriba 'demo()' para demostraciones, 'help()' para el sistema on-line de ayuda,
+o 'help.start()' para abrir el sistema de ayuda HTML con su navegador.
+Escriba 'q()' para salir de R.
 
 > 
 ```
 
+R se inicia con mensajes sobre la versión y la licencia, etc.
 
-R starts up with messages about the version and license and so on.
+En este punto, estás ejecutando R y puedes comenzar a hacer todo tipo de cosas divertidas.
 
-At this point you're running R and you can start to do all sorts of fun things.
+Comencemos con un par de conceptos básicos.
 
-Let's start with a couple of basics. 
+## Lo básico
 
-## The basics
+Una nota rápida sobre convenciones: A lo largo de esta página, verás los comandos R que debes escribir precedidos por el símbolo `>`. Este es el "símbolo del sistema" predeterminado de R. No necesitas escribir eso, solo todo lo que lo sigue.
 
-A quick note about conventions: Throughout this page you'll see R commands that you should type in prefaced by the
-`>` symbol. This is R's default "prompt". You don't need to type that, just everything that follows it.
-
-Let's try some maths. Type the following and hit 'return':
+Probemos algo de matemáticas. Escribe lo siguiente y presiona 'enter':
 
 ```R
 > 3192 / 76
 ```
 
-**Note:** R, like most programming languages, uses `/` for division and `*` for multiplication.
+**Nota:** R, como la mayoría de lenguajes de programación, usa `/` para la división y `*` para la multiplicación.
 
-R should output:
+R debería retornar:
 
 ```R
 [1] 42
 ```
 
-Don't worry too much about the `[1]` for now, that's just R's way of saying that it's the first result. As you'll learn
-later, we can return many results at once and knowing which position things are in is more useful then.
+No te preocupes demasiado por el `[1]` por ahora, esa es solo la forma en que R dice que es el primer resultado. Como aprenderás más adelante, podemos devolver muchos resultados a la vez y saber en qué posición están las cosas, es más útil entonces.
 
-Now let's try some text...
+Ahora probemos con texto...
 
-Let's assign a variable. A variable is a way of saving something for later. This could be a number or some text, or any
-one of a number of things.
+Vamos a asignar una variable. Una variable es una forma de guardar algo para más tarde. Esto podría ser un número o algún texto, o cualquiera de una serie de cosas.
 
 ```R
-> my_name <- "sellorm"
+> mi_nombre <- "sellorm"
 ```
 
-R will look like it's not done anything and return you straight to the `>` prompt. Assigning a variable is a silent
-operation, so R doesn't bother to tell us anything when all goes according to plan.
+R parecerá que no ha hecho nada y te regresará directamente al símbolo `>`. Asignar una variable es una operación silenciosa, por lo que R no se molesta en decirnos nada cuando todo va según lo planeado.
 
-You can see what value our variable has by typing it's name and hitting return:
+Puedes ver qué valor tiene nuestra variable escribiendo su nombre y presionando enter:
 
 ```R
-> my_name
+> mi_nombre
 ```
 
-This will output:
+Esto retornará:
 
 ```R
 [1] "sellorm"
 ```
 
-(There's that `[1]` again!)
+(¡Ahí está ese `[1]` otra vez!)
 
-Let's use out variable in another command. Try this:
-
-```R
-> cat("Hello", my_name, "\n")
-```
-
-This one should print the following to the screen:
+Usemos la variable en otro comando. Prueba esto:
 
 ```R
-Hello sellorm
+> cat("Hola", mi_nombre, "\n")
 ```
 
-The `cat` command is R's built-in 'concatenate' function, but it's often used for outputting simple messages like this.
-
-Hopefully the content of the command you ran makes sense -- joining the word "Hello" with the name you stored earlier -- 
-but you may be wondering about the "\n" on the end. This tells R to print a "new line". Without it, the message would
-still be printed, but our prompt would directly follow the output. 
-
-Try it:
+Esto debería imprimir lo siguiente en la pantalla:
 
 ```R
-> cat("Hello", my_name)
-Hello sellorm>
+Hola sellorm
 ```
 
-See how the prompt is now stuck on the end of the output? This isn't a problem, it just looks messy and makes it harder
-to see where you are.
+El comando `cat` es la función 'concatenar' integrada de R, pero a menudo se usa para generar mensajes simples como este.
 
-Lastly (for now!), you can run a couple of R's built-in demos.
+Con suerte, el contenido del comando que ejecutaste tiene sentido -- uniendo la palabra "Hola" con el nombre que almacenó anteriormente -- pero puede que te estés preguntando sobre el "\n" al final. Esto le dice a R que imprima una "nueva línea". Sin ella, el mensaje todavía se imprimiría, pero nuestro símbolo del sistema seguiría directamente al resultado.
 
-Try this one first:
+Inténtalo:
+
+```R
+> cat("Hola", mi_nombre)
+Hola sellorm>
+```
+
+¿Ves cómo el símbolo de sistema ahora está atascado al final del resultado? Esto no es un problema, solo se ve desordenado y hace que sea más difícil ver dónde estás.
+
+Por último (¡por ahora!), puedes ejecutar un par de demostraciones integradas de R.
+
+Prueba esta primero:
 
 ```R
 > demo(graphics)
 ```
 
-This demo will open another window, and display some pre-canned plots created with the built in plotting tools. R has a
-really powerful graphics system and the built in plotting tools are great, however, if you want to take your plots to
-the next level check out the '[ggplot2](https://ggplot2.tidyverse.org)' package.
+Esta demostración abrirá otra ventana y mostrará algunos gráficos preestablecidos creados con las herramientas de trazado integradas. R tiene un sistema de gráficos realmente potente y las herramientas de trazado integradas son geniales, sin embargo, si deseas llevar tus gráficos al siguiente nivel, consulta el paquete '[ggplot2](https://ggplot2.tidyverse.org)'.
 
 ![](/images/using_r_demo_screenshot.png)
 
-To cycle through the demo plots, make sure the terminal window has focus and hit return.
+Para recorrer los gráficos de demostración, asegúrate de que la ventana de la terminal tenga el foco y presiona enter.
 
-When no more plots are displayed and you have a bunch of `>`s stacking up in the REPL, you know you reached the end of
-the demo. You can close the graphics windows that opened now.
+Cuando no se muestran más gráficos y tienes un montón de `>` apilados en el REPL, sabes que llegó al final de la demostración. Ahora puedes cerrar las ventanas de gráficos que se abrieron.
 
-Next try this one:
+A continuación, prueba con este:
 
 ```R
 demo(image)
 ```
 
-Again, press enter to see the next example. The code for each example is shown in the REPL too, so you can start to get
-a feel for how you might be able to start creating some plots of your own.
+Nuevamente, presiona enter para ver el siguiente ejemplo. El código para cada ejemplo también se muestra en el REPL, por lo que puedes comenzar a tener una idea de cómo podrías comenzar a crear tus propios gráficos.
 
-Now that you've played around a little in R, you can exit the REPL.
+Ahora que has jugado un poco en R, puede salir del REPL.
 
-The official way to do this is with the `quit()` funtion, but R's developers have given us a handy alias, `q()`, to use
-instead.
+La forma oficial de hacer esto es con la función `quit()`, pero los desarrolladores de R nos han dado un práctico alias, `q()`, para usar en su lugar.
 
 ```R
 > q()
 Save workspace image? [y/n/c]: n
 ```
 
-When you run `q()`, R will ask if you want to save your "workspace". The workspace contains all the variables you've created
-and packages that you've loaded. It's generally considered bad practice to save the workspace, as it can get us
-into trouble later on, so always answer with "n".
+Cuando ejecutes `q()`, R te preguntará si deseas guardar tu "área de trabajo". El espacio de trabajo contiene todas las variables que has creado y los paquetes que has cargado. Por lo general, se considera una mala práctica guardar el espacio de trabajo, ya que puede causarnos problemas más adelante, por lo que siempre debes responder con "n".
 
-Eventually, even this might feel like too much typing and someone will point out that you can accomplish the same thing
-by pressing "ctrl+d" twice, so feel free to do that instead if you prefer.
-
+Eventualmente, incluso esto puede parecer demasiado tecleado y alguien señalará que puedes lograr lo mismo presionando "ctrl + d" dos veces, así que siéntete libre de hacerlo si lo prefieres.

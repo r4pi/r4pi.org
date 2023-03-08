@@ -1,55 +1,48 @@
-# Using an IDE
+# Usando un entorno de desarrollo integrado (IDE por sus siglas en ingles)
 
-## What is an IDE?
+## ¿Qué es un IDE?
 
-An IDE or "Integrated Development Environment" is a special kind of text editor, targeted specifically at computer
-programming.
+Un IDE o "Entorno de desarrollo integrado" es un tipo especial de editor de texto, dirigido específicamente a la programación informática.
 
-In princilple, you can write code in anything that will save plain text, however, an IDE will generally offer the
-programmer useful features like syntax highlighting and a way to execute code from a source code file one line at
-a time.
+En principio, puedes escribir código en cualquier cosa que guarde texto sin formato, sin embargo, un IDE generalmente ofrecerá al programador características útiles como resaltado de sintaxis y una forma de ejecutar código desde un archivo de código fuente una línea a la vez.
 
-So, an IDE will make you more productive as a developer. How do you get one?
+Entonces, un IDE te hará más productivo como desarrollador. ¿Cómo consigues uno?
 
-## Installing VSCode
+## Instalando VSCode
 
-Microsoft recently made the excellent [Visual Studio Code](https://code.visualstudio.com) IDE (also know as VSCode) 
-available for the Raspberry Pi. It's not much use for writing R out of the box, but we can install a plugin to fix that.
+Microsoft puso a disposición recientemente el excelente IDE [Visual Studio Code](https://code.visualstudio.com) (también conocido como VSCode) para Raspberry Pi. No sirve de mucho para escribir R de fábrica, pero podemos instalar un complemento para solucionarlo.
 
-You can install it from the default Raspberry Pi repos using the "Add/Remove software" app.
+Puedes instalarlo desde los repositorios predeterminados de Raspberry Pi usando la aplicación "Agregar o quitar software".
 
-Search for "code" or find it in the "Programming" section.
+Busca "código" o encuéntralo en la sección "Programación".
 
-![Add/Remove software](/docs/images/add-remove-software.png)
+![Agregar/Remover programas](/docs/images/add-remove-software.png)
 
-Once VSCode is installed we need to configure it for use with R.
+Una vez que VSCode está instalado, debemos configurarlo para usarlo con R.
 
-## Configuring VSCode for R
+## Configurando VSCode para R
 
-In order to use VSCode with R, you need to install a plugin. Right now, we recommend the excellent "R" plugin
-from the "REditorSupport" team.
+Para usar VSCode con R, debes instalar un complemento. En este momento, recomendamos el excelente complemento "R" del equipo "REditorSupport".
 
-If you're interested, you'll find the code repositories for this group's work [on GitHub](https://github.com/REditorSupport).
+Si estás interesado, encontrarás los repositorios de código para el trabajo de este grupo [en GitHub](https://github.com/REditorSupport).
 
-To install it, follow these steps:
+Para instalarlo, sigue estos pasos:
 
-* open VSCode
-* click the "Extensions" button on the left
-* Search for "R"
-* Select the "R" extension by REditorSupport
-* Click the "install" button
+* Abre VSCode
+* Haz clic el botón "Extensiones" a la izquierda
+* Busca "R"
+* Selecciona la extensión "R" por REditorSupport
+* Haz clic en el botón "instalar"
 
-![Install the R plugin for VSCode](/docs/images/vscode-r-extension.png)
+![Instala el complemento R para VSCode](/docs/images/vscode-r-extension.png)
 
-Once the plugin is installed, you're ready to start using it.
+Una vez que el complemento esté instalado, estarás listo para comenzar a utilizarlo.
 
-## Using VSCode to write R
+## Usando VSCode para escribir R
 
-Now that the plugin is installed, VSCode will automatically do syntax highlighting for us for files that have the ".R"
-extension.
-In addition, if you place your cursor on a particular line in an R file and press ctrl+enter, that line will be executed
-in an R console and the cursor will move to the next line. You can use this to step through a file one line at a time.
+Ahora que el complemento está instalado, VSCode resaltará automáticamente la sintaxis de los archivos que tienen la extensión ".R".
+Además, si colocas el cursor en una línea particular en un archivo R y presionas ctrl+enter, esa línea se ejecutará en una consola R y el cursor se moverá a la siguiente línea. Puedes usar esto para recorrer un archivo una línea a la vez.
 
-![Syntax highlighting and a plot created in VSCode](/docs/images/r4pi-vscode-penguins.png)
+![Resaltado de sintaxis y un gráfico creado en VSCode](/docs/images/r4pi-vscode-penguins.png)
 
-You can read more about the R plugin's features on the extension's "Details" page in VSCode.
+Puedes leer más sobre las características del complemento R en la página "Detalles" de la extensión en VSCode.

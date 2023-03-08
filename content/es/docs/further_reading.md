@@ -1,39 +1,29 @@
-# Further Reading
+# Otras lecturas
 
-Now that you have R installed, you might be wondering what you can do with it?
+Ahora que tienes R instalado, es posible que te preguntes, ¿qué puedes hacer con él?
 
-You've entered a whole world of programming with data. The R community is especially welcoming and vibrant, so no matter
-who you are, or what your background, you'll find a warm welcome awaits. 
+Has entrado en todo un mundo de programación con datos. La comunidad R es especialmente acogedora y vibrante, así que no importa quién seas o cuál sea tu experiencia, encontrarás una cálida bienvenida que te espera. 
 
-R users are often to be found on Twitter using the '[#rstats](https://twitter.com/search?q=%23rstats)' hashtag. It's
-also worth dropping by the [RStudio Commnity](https://community.rstudio.com/) site for help with R, particularly as it
-relates to any of RStudio's many open source packages.
+Los usuarios de R a menudo se encuentran en Twitter usando el hashtag '[#rstats](https://twitter.com/search?q=%23rstats)'. También vale la pena visitar el sitio de [Posit Community](https://community.rstudio.com/) para obtener ayuda con R, particularmente en lo que se refiere a cualquiera de los muchos paquetes de código abierto de Posit.
 
-## Understanding the basics
+## Comprendiendo los conceptos básicos
 
 ### R4DS
 
-We think the best place to start is by working through the exercises in the book 
-[R for Data Science](https://r4ds.had.co.nz) (often just referred to as "R4DS").
-You can buy a physical copy of the book, but you can also read the whole thing
-online, for free!
+Creemos que el mejor lugar para comenzar es trabajar con los ejercicios del libro [R para Ciencia de Datos](https://es.r4ds.hadley.nz/) (a menudo denominado simplemente "R4DS"). Puedes comprar una copia física del libro, pero también puedes leerlo completo en línea, ¡gratis!
 
 ### ModernDive
 
-Another great book that's more statistics-heavy that you can read for free online is, 
-"[Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com)"
-(you can just call this one "ModernDive").
+Otro gran libro que es más estadístico y que puedes leer gratis en línea es "[Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com)" (puedes llamarlo simplemente "ModernDive").
 
-### Learning Statistics with R
+### Aprendiendo Estadística con R
 
 [Learning Statistics with R](http://tidylsr.djnavarro.net/index.html)
 
+## Para programadores experimentados
 
-## For experienced programmers
+Un buen lugar para comenzar podría ser la descripción general "[learn X in Y minutes](https://learnxinyminutes.com/docs/r/)".
 
-A good place to start might be the
-"[learn X in Y minutes](https://learnxinyminutes.com/docs/r/)" overview.
+## Para programadores de R experimentados
 
-## For experienced R programmers
-
-Hadley Wickham's [Advanced R](https://adv-r.hadley.nz) is also available online.
+[Advanced R](https://adv-r.hadley.nz) de Hadley Wickham también está disponible en línea.

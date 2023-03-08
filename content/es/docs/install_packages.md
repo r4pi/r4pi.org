@@ -1,45 +1,34 @@
-# Installing packages
+# Instalando paquetes
 
-## Overview
+## Descripción general
 
-In the R world, add-on packages that provide useful functions or otherwise extend the language in some way, come from
-[CRAN](https://cran.r-project.org). CRAN serves pre-compiled binaries of these packages to Mac and Windows users, but
-Linux users (like us!) only get the source code.
+En el mundo R, los paquetes complementarios que brindan funciones útiles o amplían el lenguaje de alguna manera provienen de [CRAN](https://cran.r-project.org). CRAN provee binarios precompilados de estos paquetes para usuarios de Mac y Windows, pero los usuarios de Linux (¡como nosotros!) solo obtienen el código fuente.
 
-This makes sense as there are a very large number of Linux distributions out there and compiling binaries for all of
-them isn't feasible. Source code is the default for all Linux OSes then, but it can also be difficult to work with. As
-an end user, having to compile packages from source can be time consuming and packages also often require specific
-build-time system dependencies that you'd need to make sure were installed before attempting to build the package.
+Esto tiene sentido ya que hay una gran cantidad de distribuciones de Linux y no es factible compilar archivos binarios para todas ellas. El código fuente es el predeterminado para todos los sistemas operativos Linux, pero también puede ser difícil trabajar con él. Como usuario final, tener que compilar paquetes desde la fuente puede llevar mucho tiempo y los paquetes a menudo también requieren dependencias específicas del sistema en tiempo de compilación que debes asegurar de que estén instaladas antes de intentar compilar el paquete.
 
-## How R4Pi helps
+## Cómo ayuda R4Pi
 
-To make this process easier, the R4Pi project runs it's own CRAN mirror that only contains a small subset of some of the
-most popular packages available in the public CRAN. Since we know exactly which version of Linux you'll be using, we're
-able to compile packages for you, making installation simpler and much quicker!
+Para facilitar este proceso, el proyecto R4Pi ejecuta su propio repositorio CRAN que solo contiene un pequeño subconjunto de algunos de los paquetes más populares disponibles en el CRAN público. Dado que sabemos exactamente qué versión de Linux usarás, podemos compilar paquetes para ti, ¡haciendo que la instalación sea más simple y mucho más rápida!
 
-You can see a list of the pre-built packages that are available through the project on the
-[R4Pi packages list](https://pkgs.r4pi.org). Additional packages are added to the project from time to time, but if you
-have a specific need you can [raise an issue](https://github.com/r4pi/pkg_builder/issues) on the GitHub project and
-we'll try to accomodate your request.
+Puedes ver una lista de los paquetes precompilados que están disponibles a través del proyecto en la [lista de paquetes R4Pi](https://pkgs.r4pi.org). De vez en cuando se agregan paquetes adicionales al proyecto, pero si tienes una necesidad específica, puedes [presentar una propuesta](https://github.com/r4pi/pkg_builder/issues) en el proyecto de GitHub e intentaremos satisfacer tu solicitud.
 
-## Installation
+## Instalación
 
-You can see the default mirror by running the following inside of R:
+Puede ver el repositorio predeterminado ejecutando lo siguiente en R:
 
 ```R
 > options("repos")
 ```
 
-Packages are installed as usual using, for example:
+Los paquetes se instalan como de costumbre usando, por ejemplo:
 
 ```R
 > install.packages("tidyverse")
 ```
 
-## Installing other packages
+## Instalando otros paquetes
 
-If you need to install a package that's not available in our mirror, you can still use public CRAN, either by adding it
-to the list of available repos, or by specifying where a particular package should come from, like this:
+Si necesitas instalar un paquete que no está disponible en nuestro repositorio, aún puedes usar CRAN público, ya sea agregándolo a la lista de repositorios disponibles o especificando de dónde debe provenir un paquete en particular, así:
 
 ```R
 > install.packages(<PACKAGE_NAME>, repos = "https://cloud.r-project.org")

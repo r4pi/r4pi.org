@@ -1,36 +1,33 @@
-# R for the Raspberry Pi
+# R para la Raspberry Pi
 
 <figure markdown>
 ![R4Pi Logo](../images/r4pi-small.png)
 </figure>
 
-The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry Pi family of computers.
+El objetivo de r4pi.org es proveer una versión de R actualizada para la familia de computadoras Raspberry Pi.
 
-In addition, we provide access to pre-compiled versions of _some_ of R's most popular packages.
+Adicionalmente, proveemos acceso a versiones precompiladas de _algunos_ de los paquetes R más populares.
 
-## Background
+## Antecedentes
 
-R is the premier language for statistical computing and has millions of users around the world.
+R es el lenguaje por excelencia para la computación estadística y tiene millones de usuarios al rededor del mundo.
 
-There's already a build available for the Raspberry Pi in the default OS repos, but it's a quite an old version.
+Ya hay una compilación disponible para la Raspberry Pi en los repositorios predeterminados del sistema operativo, pero es una versión bastante antigua.
 
-We provide up-to-date builds of R and also take a number of the extension packages from CRAN and pre-compile them ready
-for use on the Pi to make installation fast and simple.
+Proporcionamos compilaciones actualizadas de R y también tomamos una serie de los paquetes de extensión desde CRAN y los precompilamos listos para usar en la Pi para hacer que la instalación sea rápida y sencilla.
 
-## R in action
+## R en acción
 
-It's possible to write R code in any text editor and a number of the text editors and IDEs available for the Pi support
-R either straight out-of-the-box or, as in the VSCode screenshot below, with the addition of a plugin.
+Es posible escribir código R en cualquier editor de texto, y varios editores de texto y entornos de desarrollo integrado (IDE por sus siglas en inglés) disponibles para la Pi soportan R directamente listo para usar o, como en la captura de pantalla de VSCode a continuación, con la adición de un complemento.
 
 ![](../docs/images/r4pi-vscode-penguins.png)
 
-The screenshot above shows some of the analytical and plotting capabilities of R with code borrowed from the 
-["palmerpenguins" package website](https://allisonhorst.github.io/palmerpenguins/).
+La captura de pantalla anterior muestra algunas de las capacidades analíticas y de trazado de R con código tomado de la [web del paquete "palmerpenguins" ](https://allisonhorst.github.io/palmerpenguins/).
 
-## Installation
+## Instalación
 
-Now you know what the project is all about, it's time to move on to [installation](docs/installation.md).
+Ahora que sabes de qué se trata el proyecto, es hora de pasar a la [instalación](docs/installation.md).
 
-## Follow us on Mastodon
+## Síguenos en Mastodon
 
-You'll find us on the fosstodon.org server, <a rel="me" href="https://fosstodon.org/@r4pi">here</a>.
+Nos encontrarás en el servidor de fosstodon.org, <a rel="me" href="https://fosstodon.org/@r4pi">aquí</a>.
