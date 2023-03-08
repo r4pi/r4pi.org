@@ -47,3 +47,12 @@ extra:
       name: R4Pi on GitHub
 markdown_extensions:
   - md_in_html
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Español
+      link: /es/
+      lang: es
+
