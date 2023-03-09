@@ -18,7 +18,7 @@ Proporcionamos compilaciones actualizadas de R y también tomamos una serie de l
 
 ## R en acción
 
-Es posible escribir código R en cualquier editor de texto, y varios editores de texto y entornos de desarrollo integrado (IDE por sus siglas en inglés) disponibles para la Pi soportan R directamente listo para usar o, como en la captura de pantalla de VSCode a continuación, con la adición de un complemento.
+Es posible escribir código R en cualquier editor de texto, y varios editores de texto y entornos de desarrollo integrado (IDE por sus siglas en inglés) disponibles para la Pi soportan R directamente listos para usar, o como en la captura de pantalla de VSCode a continuación, con la adición de un complemento.
 
 ![](assets/images/docs/r4pi-vscode-penguins.png)
 

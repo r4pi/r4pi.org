@@ -1,19 +1,17 @@
-# Usando un entorno de desarrollo integrado (IDE por sus siglas en ingles)
+# Usando un entorno de desarrollo integrado (IDE)
 
 ## ¿Qué es un IDE?
 
-Un IDE o "Entorno de desarrollo integrado" es un tipo especial de editor de texto, dirigido específicamente a la programación informática.
+Un IDE o "Entorno de desarrollo integrado" (por sus siglas en ingles) es un tipo especial de editor de texto, dirigido específicamente a la programación informática.
 
 En principio, puedes escribir código en cualquier cosa que guarde texto sin formato, sin embargo, un IDE generalmente ofrecerá al programador características útiles como resaltado de sintaxis y una forma de ejecutar código desde un archivo de código fuente una línea a la vez.
 
 Entonces, un IDE te hará más productivo como desarrollador. ¿Cómo consigues uno?
 
-!!! info "Using RStudio IDE"
-    We know a lot of users would prefer to use Posit's RStudio IDE.
-    We are aware that Posit is working on Arm64 compatible builds and we'll document the installation
-    process as soon as a formal release is available.
-    In the meantime, if you're using 64bit Raspberry Pi OS and would like to try RStudio on the Pi
-    for yourself, you'll find the daily builds on the [RStudio Dailies site](https://dailies.rstudio.com/).
+!!! info "Usando el IDE RStudio"
+    Sabemos que muchos usuarios preferirían usar el IDE RStudio de Posit.
+    Somos conscientes de que Posit está trabajando en compilaciones compatibles con Arm64 y documentaremos el proceso de instalación tan pronto como esté disponible una versión formal.
+    Mientras tanto, si estás utilizando el sistema operativo Raspberry Pi de 64 bits y te gustaría probar RStudio en el Pi tú mismo, encontrarás las compilaciones diarias en el [sitio RStudio Dailies](https://dailies.rstudio.com/).
 
 ## Instalando VSCode
 

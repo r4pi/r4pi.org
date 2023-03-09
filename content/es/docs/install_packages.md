@@ -6,11 +6,11 @@ En el mundo R, los paquetes complementarios que brindan funciones útiles o ampl
 
 Esto tiene sentido ya que hay una gran cantidad de distribuciones de Linux y no es factible compilar archivos binarios para todas ellas. El código fuente es el predeterminado para todos los sistemas operativos Linux, pero también puede ser difícil trabajar con él. Como usuario final, tener que compilar paquetes desde la fuente puede llevar mucho tiempo y los paquetes a menudo también requieren dependencias específicas del sistema en tiempo de compilación que debes asegurar de que estén instaladas antes de intentar compilar el paquete.
 
-## Cómo ayuda R4Pi
+## ¿Cómo ayuda R4Pi?
 
 Para facilitar este proceso, el proyecto R4Pi ejecuta su propio repositorio CRAN que solo contiene un pequeño subconjunto de algunos de los paquetes más populares disponibles en el CRAN público. Dado que sabemos exactamente qué versión de Linux usarás, podemos compilar paquetes para ti, ¡haciendo que la instalación sea más simple y mucho más rápida!
 
-Puedes ver una lista de los paquetes precompilados que están disponibles a través del proyecto en la [lista de paquetes R4Pi](https://pkgs.r4pi.org). De vez en cuando se agregan paquetes adicionales al proyecto, pero si tienes una necesidad específica, puedes [presentar una propuesta](https://github.com/r4pi/pkg_builder/issues) en el proyecto de GitHub e intentaremos satisfacer tu solicitud.
+Puedes ver una lista de los paquetes precompilados que están disponibles a través del proyecto en la [lista de paquetes R4Pi](https://pkgs.r4pi.org). De vez en cuando se agregan paquetes adicionales al proyecto, pero si tienes una necesidad específica, puedes [presentar una propuesta](https://github.com/r4pi/pkg_builder/issues) en el repositorio de GitHub para el proyecto e intentaremos satisfacer tu solicitud.
 
 ## Instalación
 

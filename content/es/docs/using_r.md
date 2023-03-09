@@ -40,7 +40,7 @@ Comencemos con un par de conceptos básicos.
 
 ## Lo básico
 
-Una nota rápida sobre convenciones: A lo largo de esta página, verás los comandos R que debes escribir precedidos por el símbolo `>`. Este es el "símbolo del sistema" predeterminado de R. No necesitas escribir eso, solo todo lo que lo sigue.
+Una nota rápida sobre convenciones: A lo largo de esta página, verás los comandos R que debes escribir precedidos por el símbolo `>`. Este es el "símbolo del sistema" predeterminado de R, no necesitas escribirlo, solo todo lo que le sigue.
 
 Probemos algo de matemáticas. Escribe lo siguiente y presiona 'enter':
 
@@ -68,7 +68,7 @@ Vamos a asignar una variable. Una variable es una forma de guardar algo para má
 
 R parecerá que no ha hecho nada y te regresará directamente al símbolo `>`. Asignar una variable es una operación silenciosa, por lo que R no se molesta en decirnos nada cuando todo va según lo planeado.
 
-Puedes ver qué valor tiene nuestra variable escribiendo su nombre y presionando enter:
+Puedes ver que valor tiene nuestra variable escribiendo su nombre y presionando enter:
 
 ```R
 > mi_nombre
@@ -119,7 +119,7 @@ Esta demostración abrirá otra ventana y mostrará algunos gráficos preestable
 
 ![](../../assets/images/using_r_demo_screenshot.png)
 
-Para recorrer los gráficos de demostración, asegúrate de que la ventana de la terminal tenga el foco y presiona enter.
+Para recorrer los gráficos de demostración, asegúrate de que la ventana de la terminal esté seleccionada y presiona enter.
 
 Cuando no se muestran más gráficos y tienes un montón de `>` apilados en el REPL, sabes que llegó al final de la demostración. Ahora puedes cerrar las ventanas de gráficos que se abrieron.
 
@@ -140,6 +140,6 @@ La forma oficial de hacer esto es con la función `quit()`, pero los desarrollad
 Save workspace image? [y/n/c]: n
 ```
 
-Cuando ejecutes `q()`, R te preguntará si deseas guardar tu "área de trabajo". El espacio de trabajo contiene todas las variables que has creado y los paquetes que has cargado. Por lo general, se considera una mala práctica guardar el espacio de trabajo, ya que puede causarnos problemas más adelante, por lo que siempre debes responder con "n".
+Cuando ejecutes `q()`, R te preguntará si deseas guardar tu "espacio de trabajo". El espacio de trabajo contiene todas las variables que has creado y los paquetes que has cargado. Por lo general, se considera una mala práctica guardar el espacio de trabajo, ya que puede causarnos problemas más adelante, por lo que siempre debes responder con "n".
 
 Eventualmente, incluso esto puede parecer demasiado tecleado y alguien señalará que puedes lograr lo mismo presionando "ctrl + d" dos veces, así que siéntete libre de hacerlo si lo prefieres.

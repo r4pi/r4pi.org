@@ -1,10 +1,10 @@
-# Otras lecturas
+# Lectura adicional
 
 Ahora que tienes R instalado, es posible que te preguntes, ¿qué puedes hacer con él?
 
 Has entrado en todo un mundo de programación con datos. La comunidad R es especialmente acogedora y vibrante, así que no importa quién seas o cuál sea tu experiencia, encontrarás una cálida bienvenida que te espera. 
 
-Los usuarios de R a menudo se encuentran en Twitter usando el hashtag '[#rstats](https://twitter.com/search?q=%23rstats)'. También vale la pena visitar el sitio de [Posit Community](https://community.rstudio.com/) para obtener ayuda con R, particularmente en lo que se refiere a cualquiera de los muchos paquetes de código abierto de Posit.
+Los usuarios de R a menudo se encuentran en Mastodon usando el hashtag '[#rstats](https://mastodon.social/tags/rstats)'. También vale la pena visitar el sitio de [Posit Community](https://community.rstudio.com/) para obtener ayuda con R, particularmente en lo que se refiere a cualquiera de los muchos paquetes de código abierto de Posit.
 
 ## Comprendiendo los conceptos básicos
 

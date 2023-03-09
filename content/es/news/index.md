@@ -1,17 +1,10 @@
 # Noticias
 
-## 2022-03-09 - Added a Spanish translation
+## 2022-03-09 - Se agregó una traducción al español
 
-The R4Pi team is dedicated to supporting our users as well as we possibly can
-using the limited resources at out disposal.
-To better support our users and further the reach of the project,
-we're excited to announce that this site is now also [available in Spanish](/es/).
-This translation is the work of R4Pi team member,
-[Andrés](https://mastodon.social/@andresrcs), who's done an incredible job on
-the translation.
+El equipo de R4Pi se dedica a ayudar a nuestros usuarios de la mejor manera posible utilizando los recursos limitados a nuestra disposición. Para apoyar mejor a nuestros usuarios y aumentar el alcance del proyecto, nos complace anunciar que este sitio ahora también está disponible en español. Esta traducción es obra del miembro del equipo de R4Pi, [Andrés](https://mastodon.social/@andresrcs), quien ha hecho un trabajo increíble en la traducción.
 
-If you'd like to contribute a translation, please
-[let us know](https://github.com/r4pi/r4pi.org/issues/new)!
+Si deseas contribuir con una traducción, ¡[háznoslos saber](https://github.com/r4pi/r4pi.org/issues/new)!
 
 ---
 

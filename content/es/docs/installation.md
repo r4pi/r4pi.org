@@ -4,7 +4,7 @@
 
 Debes estar ejecutando el [Sistema Operativo Raspberry Pi](https://www.raspberrypi.org/software/operating-systems/) oficial (anteriormente llamado Raspbian) en tu sistema y debe estar actualizado.
 
-Técnicamente, el software debería funcionar en todas las versiones de Pi, sin embargo, debido a limitaciones de memoria con versiones anteriores y la Pi Zero, **recomendamos una Raspberry Pi 4 con 2G o más** de RAM.
+Técnicamente, el software debería funcionar en todas las versiones de Pi, sin embargo, debido a limitaciones de memoria con versiones anteriores y la Pi Zero, **recomendamos una Raspberry Pi 4 con 2GB o más** de RAM.
 
 Puedes consultar tu modelo de Raspberry Pi en una terminal con:
 
@@ -16,7 +16,7 @@ Por supuesto, puedes ejecutar el software en cualquier Raspberry Pi, pero debes 
 
 ## Acerca de la compilación R de r4pi
 
-Nuestra compilación de R rastrea la versión de "lanzamiento" actual del [Proyecto R](https://r-project.org).
+Nuestra compilación de R sigue la versión de "lanzamiento" actual del [Proyecto R](https://r-project.org).
 
 Esta es esencialmente la última versión de R disponible
 
