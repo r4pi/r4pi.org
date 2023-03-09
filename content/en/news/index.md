@@ -3,7 +3,7 @@
 ## 2022-03-09 - Added a Spanish translation
 
 The R4Pi team is dedicated to supporting our users as well as we possibly can
-using the limited resources at out disposal.
+using the limited resources at our disposal.
 To better support our users and further the reach of the project,
 we're excited to announce that this site is now also [available in Spanish](/es/).
 This translation is the work of R4Pi team member,

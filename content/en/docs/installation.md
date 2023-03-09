@@ -7,7 +7,7 @@ You must be running the official [Raspberry Pi OS](https://www.raspberrypi.org/s
 (previously called Raspbian) on your system and it must be up to date.
 
 Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions
-and the Pi Zero, **we recommend a Raspberry Pi 4 with 2G or more** of RAM.
+and the Pi Zero, **we recommend a Raspberry Pi 4 with 2GB or more** of RAM.
 
 You can check your Raspberry Pi model in a terminal with:
 
@@ -28,7 +28,7 @@ This is essentially the latest version of R available
 
 ## Setting things up
 
-Before you can install the r4pi build of R, you need configure access to the r4pi.org software repository.
+Before you can install the r4pi build of R, you need to configure access to the r4pi.org software repository.
 
 ```bash
 curl -O  https://pkgs.r4pi.org/dl/r4pi-repo-conf_0.0.1-1_all.deb

@@ -20,7 +20,7 @@ So, an IDE will make you more productive as a developer. How do you get one?
 
 ## Installing VSCode
 
-Microsoft recently made the excellent [Visual Studio Code](https://code.visualstudio.com) IDE (also know as VSCode) 
+Microsoft recently made the excellent [Visual Studio Code](https://code.visualstudio.com) IDE (also known as VSCode) 
 available for the Raspberry Pi. It's not much use for writing R out of the box, but we can install a plugin to fix that.
 
 You can install it from the default Raspberry Pi repos using the "Add/Remove software" app.

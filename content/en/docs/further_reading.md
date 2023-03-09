@@ -6,7 +6,7 @@ You've entered a whole world of programming with data. The R community is especi
 who you are, or what your background, you'll find a warm welcome awaits. 
 
 R users are often to be found on Mastodon using the '[#rstats](https://mastodon.social/tags/rstats)' hashtag. It's
-also worth dropping by the [Posit Commnity](https://community.rstudio.com/) site for help with R, particularly as it
+also worth dropping by the [Posit Community](https://community.rstudio.com/) site for help with R, particularly as it
 relates to any of Posit's many open source packages.
 
 ## Understanding the basics

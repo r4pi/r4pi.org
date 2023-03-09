@@ -2,7 +2,7 @@
 
 ## Starting R
 
-R has it's own interactive REPL ([Read-eval-print loop](https://en.wikipedia.org/wiki/Read–eval–print_loop)) and this
+R has its own interactive REPL ([Read-eval-print loop](https://en.wikipedia.org/wiki/Read–eval–print_loop)) and this
 is where many R users on Linux will start.
 
 There are two ways to start R. If you're using the Raspberry Pi OS desktop, you can start R through the menu as shown below.
@@ -76,7 +76,7 @@ one of a number of things.
 R will look like it's not done anything and return you straight to the `>` prompt. Assigning a variable is a silent
 operation, so R doesn't bother to tell us anything when all goes according to plan.
 
-You can see what value our variable has by typing it's name and hitting return:
+You can see what value our variable has by typing its name and hitting return:
 
 ```R
 > my_name
@@ -90,7 +90,7 @@ This will output:
 
 (There's that `[1]` again!)
 
-Let's use out variable in another command. Try this:
+Let's use our variable in another command. Try this:
 
 ```R
 > cat("Hello", my_name, "\n")
@@ -126,8 +126,8 @@ Try this one first:
 > demo(graphics)
 ```
 
-This demo will open another window, and display some pre-canned plots created with the built in plotting tools. R has a
-really powerful graphics system and the built in plotting tools are great, however, if you want to take your plots to
+This demo will open another window, and display some pre-canned plots created with the built-in plotting tools. R has a
+really powerful graphics system and the built-in plotting tools are great, however, if you want to take your plots to
 the next level check out the '[ggplot2](https://ggplot2.tidyverse.org)' package.
 
 ![](../assets/images/using_r_demo_screenshot.png)
@@ -137,7 +137,7 @@ To cycle through the demo plots, make sure the terminal window has focus and hit
 When no more plots are displayed and you have a bunch of `>`s stacking up in the REPL, you know you reached the end of
 the demo. You can close the graphics windows that opened now.
 
-Next try this one:
+Next, try this one:
 
 ```R
 demo(image)
@@ -148,7 +148,7 @@ a feel for how you might be able to start creating some plots of your own.
 
 Now that you've played around a little in R, you can exit the REPL.
 
-The official way to do this is with the `quit()` funtion, but R's developers have given us a handy alias, `q()`, to use
+The official way to do this is with the `quit()` function, but R's developers have given us a handy alias, `q()`, to use
 instead.
 
 ```R
