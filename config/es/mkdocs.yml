@@ -36,7 +36,7 @@ nav:
     - docs/install_packages.md
     - docs/ide.md
     - docs/further_reading.md
-  - news/index.md
+  - noticias/index.md
 extra_css:
   - assets/css/extra.css
 copyright: Copyright &copy; 2023 The R4Pi Team
