@@ -7,7 +7,7 @@ using the limited resources at out disposal.
 To better support our users and further the reach of the project,
 we're excited to announce that this site is now also [available in Spanish](/es/).
 This translation is the work of R4Pi team member,
-[Andres](https://mastodon.social/@andresrcs), who's done an incredible job on
+[Andrés](https://mastodon.social/@andresrcs), who's done an incredible job on
 the translation.
 
 If you'd like to contribute a translation, please
