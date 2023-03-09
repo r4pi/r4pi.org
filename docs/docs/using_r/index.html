@@ -512,7 +512,7 @@
 
 <h1 id="using-r">Using R</h1>
 <h2 id="starting-r">Starting R</h2>
-<p>R has it's own interactive REPL (<a href="https://en.wikipedia.org/wiki/Read–eval–print_loop">Read-eval-print loop</a>) and this
+<p>R has its own interactive REPL (<a href="https://en.wikipedia.org/wiki/Read–eval–print_loop">Read-eval-print loop</a>) and this
 is where many R users on Linux will start.</p>
 <p>There are two ways to start R. If you're using the Raspberry Pi OS desktop, you can start R through the menu as shown below.</p>
 <p><img alt="R4Pi menu item on Raspberry PI OS" src="../../assets/images/docs/r4pi_menu.png" /></p>
@@ -561,14 +561,14 @@ one of a number of things.</p>
 </code></pre></div>
 <p>R will look like it's not done anything and return you straight to the <code>&gt;</code> prompt. Assigning a variable is a silent
 operation, so R doesn't bother to tell us anything when all goes according to plan.</p>
-<p>You can see what value our variable has by typing it's name and hitting return:</p>
+<p>You can see what value our variable has by typing its name and hitting return:</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="n">my_name</span>
 </code></pre></div>
 <p>This will output:</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="s">&quot;sellorm&quot;</span>
 </code></pre></div>
 <p>(There's that <code>[1]</code> again!)</p>
-<p>Let's use out variable in another command. Try this:</p>
+<p>Let's use our variable in another command. Try this:</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">cat</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">my_name</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>This one should print the following to the screen:</p>
@@ -588,20 +588,20 @@ to see where you are.</p>
 <p>Try this one first:</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">demo</span><span class="p">(</span><span class="n">graphics</span><span class="p">)</span>
 </code></pre></div>
-<p>This demo will open another window, and display some pre-canned plots created with the built in plotting tools. R has a
-really powerful graphics system and the built in plotting tools are great, however, if you want to take your plots to
+<p>This demo will open another window, and display some pre-canned plots created with the built-in plotting tools. R has a
+really powerful graphics system and the built-in plotting tools are great, however, if you want to take your plots to
 the next level check out the '<a href="https://ggplot2.tidyverse.org">ggplot2</a>' package.</p>
 <p><img alt="" src="../../assets/images/using_r_demo_screenshot.png" /></p>
 <p>To cycle through the demo plots, make sure the terminal window has focus and hit return.</p>
 <p>When no more plots are displayed and you have a bunch of <code>&gt;</code>s stacking up in the REPL, you know you reached the end of
 the demo. You can close the graphics windows that opened now.</p>
-<p>Next try this one:</p>
+<p>Next, try this one:</p>
 <div class="highlight"><pre><span></span><code><span class="nf">demo</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
 </code></pre></div>
 <p>Again, press enter to see the next example. The code for each example is shown in the REPL too, so you can start to get
 a feel for how you might be able to start creating some plots of your own.</p>
 <p>Now that you've played around a little in R, you can exit the REPL.</p>
-<p>The official way to do this is with the <code>quit()</code> funtion, but R's developers have given us a handy alias, <code>q()</code>, to use
+<p>The official way to do this is with the <code>quit()</code> function, but R's developers have given us a handy alias, <code>q()</code>, to use
 instead.</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">q</span><span class="p">()</span>
 <span class="n">Save</span><span class="w"> </span><span class="n">workspace</span><span class="w"> </span><span class="n">image</span><span class="o">?</span><span class="w"> </span><span class="p">[</span><span class="n">y</span><span class="o">/</span><span class="n">n</span><span class="o">/</span><span class="n">c</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">n</span>

@@ -543,7 +543,7 @@
 <p>You must be running the official <a href="https://www.raspberrypi.org/software/operating-systems/">Raspberry Pi OS</a>
 (previously called Raspbian) on your system and it must be up to date.</p>
 <p>Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions
-and the Pi Zero, <strong>we recommend a Raspberry Pi 4 with 2G or more</strong> of RAM.</p>
+and the Pi Zero, <strong>we recommend a Raspberry Pi 4 with 2GB or more</strong> of RAM.</p>
 <p>You can check your Raspberry Pi model in a terminal with:</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/sys/firmware/devicetree/base/model<span class="p">;</span><span class="nb">echo</span>
 </code></pre></div>
@@ -553,7 +553,7 @@ with low memory.</p>
 <p>Our build of R tracks the <a href="https://r-project.org">R Project</a>'s current "release" version.</p>
 <p>This is essentially the latest version of R available</p>
 <h2 id="setting-things-up">Setting things up</h2>
-<p>Before you can install the r4pi build of R, you need configure access to the r4pi.org software repository.</p>
+<p>Before you can install the r4pi build of R, you need to configure access to the r4pi.org software repository.</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-O<span class="w">  </span>https://pkgs.r4pi.org/dl/r4pi-repo-conf_0.0.1-1_all.deb
 sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w">  </span>r4pi-repo-conf_0.0.1-1_all.deb
 sudo<span class="w"> </span>apt<span class="w"> </span>update
