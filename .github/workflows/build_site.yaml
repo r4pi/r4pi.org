@@ -6,10 +6,10 @@ on:
   
   workflow_dispatch:
 
-name: rmarkdown-render
+name: Build site with mkdocs
 
 jobs:
-  rmdrender:
+  build_site:
     runs-on: ubuntu-22.04
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -37,4 +37,4 @@ jobs:
         run: |
           git add -f docs/*
           git commit -am "Automated GitHub action build"
-          git push --force --set-upstream origin gh-pages
+          git push --force --set-upstream origin main:gh-pages
