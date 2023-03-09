@@ -545,8 +545,8 @@
 <p>Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions
 and the Pi Zero, <strong>we recommend a Raspberry Pi 4 with 2G or more</strong> of RAM.</p>
 <p>You can check your Raspberry Pi model in a terminal with:</p>
-<pre><code class="language-bash">cat /sys/firmware/devicetree/base/model;echo
-</code></pre>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/sys/firmware/devicetree/base/model<span class="p">;</span><span class="nb">echo</span>
+</code></pre></div>
 <p>You are, of course, welcome to run the software on any Raspberry Pi, but you should expect poor performance on systems
 with low memory.</p>
 <h2 id="about-the-r4pi-r-build">About the r4pi R build</h2>
@@ -554,27 +554,27 @@ with low memory.</p>
 <p>This is essentially the latest version of R available</p>
 <h2 id="setting-things-up">Setting things up</h2>
 <p>Before you can install the r4pi build of R, you need configure access to the r4pi.org software repository.</p>
-<pre><code class="language-bash">curl -O  https://pkgs.r4pi.org/dl/r4pi-repo-conf_0.0.1-1_all.deb
-sudo dpkg -i  r4pi-repo-conf_0.0.1-1_all.deb
-sudo apt update
-</code></pre>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-O<span class="w">  </span>https://pkgs.r4pi.org/dl/r4pi-repo-conf_0.0.1-1_all.deb
+sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w">  </span>r4pi-repo-conf_0.0.1-1_all.deb
+sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div>
 <p>You're now ready to install our build of R.</p>
 <h2 id="installing-the-software">Installing the software</h2>
 <p>Now that you've configured your system, you can go ahead and install the software.</p>
 <p>First update all your sources:</p>
-<pre><code class="language-bash">sudo apt update
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div>
 <p>You should see the new r4pi.org source in the output somewhere.</p>
 <p>Next, install any updates that are available, note that this can take some time.</p>
-<pre><code class="language-bash">sudo apt upgrade
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
+</code></pre></div>
 <p>Finally, install the r4pi build of R.</p>
-<pre><code class="language-bash">sudo apt install r4pi
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>r4pi
+</code></pre></div>
 <p>Assuming that's successful, you're now ready to start using R.</p>
 <p>You can start R by running:</p>
-<pre><code class="language-bash">R
-</code></pre>
+<div class="highlight"><pre><span></span><code>R
+</code></pre></div>
 <p>Type ctrl+d twice to exit.</p>
 
 

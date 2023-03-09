@@ -8,4 +8,4 @@ clean:
 	rm -rf docs/*
 
 serve:
-	python3 -m http.server --directory ./docs/ 8000
+	python3 -m http.server --directory ./docs/ 8080

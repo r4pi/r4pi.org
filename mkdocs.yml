@@ -50,6 +50,9 @@ extra:
       name: R4Pi on GitHub
 markdown_extensions:
   - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 extra:
   alternate:
     - name: English

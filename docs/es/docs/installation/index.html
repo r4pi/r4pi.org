@@ -19,7 +19,7 @@
     
     
       
-        <title>Instalación - R for the Raspberry Pi</title>
+        <title>Instalación - R para la Raspberry Pi</title>
       
     
     
@@ -89,7 +89,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="../.." title="R for the Raspberry Pi" class="md-header__button md-logo" aria-label="R for the Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="R para la Raspberry Pi" class="md-header__button md-logo" aria-label="R para la Raspberry Pi" data-md-component="logo">
       
   <img src="../../assets/images/r4pi-small-white.png" alt="logo">
 
@@ -101,7 +101,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            R for the Raspberry Pi
+            R para la Raspberry Pi
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -232,12 +232,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="R for the Raspberry Pi" class="md-nav__button md-logo" aria-label="R for the Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="R para la Raspberry Pi" class="md-nav__button md-logo" aria-label="R para la Raspberry Pi" data-md-component="logo">
       
   <img src="../../assets/images/r4pi-small-white.png" alt="logo">
 
     </a>
-    R for the Raspberry Pi
+    R para la Raspberry Pi
   </label>
   
     <div class="md-nav__source">
@@ -263,7 +263,7 @@
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Home
+        Inicio
       </a>
     </li>
   
@@ -289,14 +289,14 @@
       
       
         <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-          Documentacion
+          Documentación
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Documentacion
+          Documentación
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -543,35 +543,35 @@
 <p>Debes estar ejecutando el <a href="https://www.raspberrypi.org/software/operating-systems/">Sistema Operativo Raspberry Pi</a> oficial (anteriormente llamado Raspbian) en tu sistema y debe estar actualizado.</p>
 <p>Técnicamente, el software debería funcionar en todas las versiones de Pi, sin embargo, debido a limitaciones de memoria con versiones anteriores y la Pi Zero, <strong>recomendamos una Raspberry Pi 4 con 2G o más</strong> de RAM.</p>
 <p>Puedes consultar tu modelo de Raspberry Pi en una terminal con:</p>
-<pre><code class="language-bash">cat /sys/firmware/devicetree/base/model;echo
-</code></pre>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/sys/firmware/devicetree/base/model<span class="p">;</span><span class="nb">echo</span>
+</code></pre></div>
 <p>Por supuesto, puedes ejecutar el software en cualquier Raspberry Pi, pero debes esperar un rendimiento deficiente en los sistemas con poca memoria.</p>
 <h2 id="acerca-de-la-compilacion-r-de-r4pi">Acerca de la compilación R de r4pi</h2>
 <p>Nuestra compilación de R rastrea la versión de "lanzamiento" actual del <a href="https://r-project.org">Proyecto R</a>.</p>
 <p>Esta es esencialmente la última versión de R disponible</p>
 <h2 id="configurando-las-cosas">Configurando las cosas</h2>
 <p>Antes de poder instalar la compilación r4pi de R, debe configurar el acceso al repositorio de software r4pi.org.</p>
-<pre><code class="language-bash">curl -O  https://pkgs.r4pi.org/dl/r4pi-repo-conf_0.0.1-1_all.deb
-sudo dpkg -i  r4pi-repo-conf_0.0.1-1_all.deb
-sudo apt update
-</code></pre>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-O<span class="w">  </span>https://pkgs.r4pi.org/dl/r4pi-repo-conf_0.0.1-1_all.deb
+sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w">  </span>r4pi-repo-conf_0.0.1-1_all.deb
+sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div>
 <p>Ahora estás listo para instalar nuestra compilación de R</p>
 <h2 id="instalacion-del-programa">Instalación del programa</h2>
 <p>Ahora que has configurado tu sistema, puedes continuar e instalar el software.</p>
 <p>Primero actualiza todas tus fuentes:</p>
-<pre><code class="language-bash">sudo apt update
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div>
 <p>Deberías ver la nueva fuente r4pi.org en la salida de consola en alguna parte.</p>
 <p>A continuación, instala las actualizaciones que estén disponibles, ten en cuenta que esto puede llevar algún tiempo.</p>
-<pre><code class="language-bash">sudo apt upgrade
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
+</code></pre></div>
 <p>Finalmente, instala la compilación r4pi de R.</p>
-<pre><code class="language-bash">sudo apt install r4pi
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>r4pi
+</code></pre></div>
 <p>Suponiendo que todo salió bien, ahora estás listo para comenzar a usar R.</p>
 <p>Puedes iniciar R ejecutando:</p>
-<pre><code class="language-bash">R
-</code></pre>
+<div class="highlight"><pre><span></span><code>R
+</code></pre></div>
 <p>Teclea ctrl+d dos veces para salir.</p>
 
 

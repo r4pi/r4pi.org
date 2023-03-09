@@ -19,7 +19,7 @@
     
     
       
-        <title>Instalando paquetes - R for the Raspberry Pi</title>
+        <title>Instalando paquetes - R para la Raspberry Pi</title>
       
     
     
@@ -89,7 +89,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="../.." title="R for the Raspberry Pi" class="md-header__button md-logo" aria-label="R for the Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="R para la Raspberry Pi" class="md-header__button md-logo" aria-label="R para la Raspberry Pi" data-md-component="logo">
       
   <img src="../../assets/images/r4pi-small-white.png" alt="logo">
 
@@ -101,7 +101,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            R for the Raspberry Pi
+            R para la Raspberry Pi
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -232,12 +232,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="R for the Raspberry Pi" class="md-nav__button md-logo" aria-label="R for the Raspberry Pi" data-md-component="logo">
+    <a href="../.." title="R para la Raspberry Pi" class="md-nav__button md-logo" aria-label="R para la Raspberry Pi" data-md-component="logo">
       
   <img src="../../assets/images/r4pi-small-white.png" alt="logo">
 
     </a>
-    R for the Raspberry Pi
+    R para la Raspberry Pi
   </label>
   
     <div class="md-nav__source">
@@ -263,7 +263,7 @@
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Home
+        Inicio
       </a>
     </li>
   
@@ -289,14 +289,14 @@
       
       
         <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-          Documentacion
+          Documentación
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Documentacion
+          Documentación
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -547,15 +547,15 @@
 <p>Puedes ver una lista de los paquetes precompilados que están disponibles a través del proyecto en la <a href="https://pkgs.r4pi.org">lista de paquetes R4Pi</a>. De vez en cuando se agregan paquetes adicionales al proyecto, pero si tienes una necesidad específica, puedes <a href="https://github.com/r4pi/pkg_builder/issues">presentar una propuesta</a> en el proyecto de GitHub e intentaremos satisfacer tu solicitud.</p>
 <h2 id="instalacion">Instalación</h2>
 <p>Puede ver el repositorio predeterminado ejecutando lo siguiente en R:</p>
-<pre><code class="language-R">&gt; options(&quot;repos&quot;)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">options</span><span class="p">(</span><span class="s">&quot;repos&quot;</span><span class="p">)</span>
+</code></pre></div>
 <p>Los paquetes se instalan como de costumbre usando, por ejemplo:</p>
-<pre><code class="language-R">&gt; install.packages(&quot;tidyverse&quot;)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;tidyverse&quot;</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="instalando-otros-paquetes">Instalando otros paquetes</h2>
 <p>Si necesitas instalar un paquete que no está disponible en nuestro repositorio, aún puedes usar CRAN público, ya sea agregándolo a la lista de repositorios disponibles o especificando de dónde debe provenir un paquete en particular, así:</p>
-<pre><code class="language-R">&gt; install.packages(&lt;PACKAGE_NAME&gt;, repos = &quot;https://cloud.r-project.org&quot;)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">install.packages</span><span class="p">(</span><span class="o">&lt;</span><span class="n">PACKAGE_NAME</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">repos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://cloud.r-project.org&quot;</span><span class="p">)</span>
+</code></pre></div>
 
 
 

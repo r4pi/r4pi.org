@@ -557,16 +557,16 @@ have a specific need you can <a href="https://github.com/r4pi/pkg_builder/issues
 we'll try to accomodate your request.</p>
 <h2 id="installation">Installation</h2>
 <p>You can see the default mirror by running the following inside of R:</p>
-<pre><code class="language-R">&gt; options(&quot;repos&quot;)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">options</span><span class="p">(</span><span class="s">&quot;repos&quot;</span><span class="p">)</span>
+</code></pre></div>
 <p>Packages are installed as usual using, for example:</p>
-<pre><code class="language-R">&gt; install.packages(&quot;tidyverse&quot;)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;tidyverse&quot;</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="installing-other-packages">Installing other packages</h2>
 <p>If you need to install a package that's not available in our mirror, you can still use public CRAN, either by adding it
 to the list of available repos, or by specifying where a particular package should come from, like this:</p>
-<pre><code class="language-R">&gt; install.packages(&lt;PACKAGE_NAME&gt;, repos = &quot;https://cloud.r-project.org&quot;)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">install.packages</span><span class="p">(</span><span class="o">&lt;</span><span class="n">PACKAGE_NAME</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">repos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://cloud.r-project.org&quot;</span><span class="p">)</span>
+</code></pre></div>
 
 
 

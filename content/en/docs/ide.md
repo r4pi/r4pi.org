@@ -11,6 +11,13 @@ a time.
 
 So, an IDE will make you more productive as a developer. How do you get one?
 
+!!! info "Using RStudio IDE"
+    We know a lot of users would prefer to use Posit's RStudio IDE.
+    We are aware that Posit is working on Arm64 compatible builds and we'll document the installation
+    process as soon as a formal release is available.
+    In the meantime, if you're using 64bit Raspberry Pi OS and would like to try RStudio on the Pi 
+    for yourself, you'll find the daily builds on the [RStudio Dailies site](https://dailies.rstudio.com/).
+
 ## Installing VSCode
 
 Microsoft recently made the excellent [Visual Studio Code](https://code.visualstudio.com) IDE (also know as VSCode) 

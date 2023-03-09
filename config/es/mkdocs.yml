@@ -1,4 +1,4 @@
-site_name: R for the Raspberry Pi
+site_name:  R para la Raspberry Pi
 repo_url: https://github.com/r4pi
 repo_name: R4Pi GitHub
 edit_uri: r4pi.org/edit/main/content
@@ -29,8 +29,8 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 nav:
-  - Home: index.md
-  - Documentacion:
+  - Inicio: index.md
+  - Documentación:
     - docs/installation.md
     - docs/using_r.md
     - docs/install_packages.md
@@ -50,6 +50,9 @@ extra:
       name: R4Pi on GitHub
 markdown_extensions:
   - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 extra:
   alternate:
     - name: English

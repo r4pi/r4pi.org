@@ -8,6 +8,13 @@ En principio, puedes escribir código en cualquier cosa que guarde texto sin for
 
 Entonces, un IDE te hará más productivo como desarrollador. ¿Cómo consigues uno?
 
+!!! info "Using RStudio IDE"
+    We know a lot of users would prefer to use Posit's RStudio IDE.
+    We are aware that Posit is working on Arm64 compatible builds and we'll document the installation
+    process as soon as a formal release is available.
+    In the meantime, if you're using 64bit Raspberry Pi OS and would like to try RStudio on the Pi
+    for yourself, you'll find the daily builds on the [RStudio Dailies site](https://dailies.rstudio.com/).
+
 ## Instalando VSCode
 
 Microsoft puso a disposición recientemente el excelente IDE [Visual Studio Code](https://code.visualstudio.com) (también conocido como VSCode) para Raspberry Pi. No sirve de mucho para escribir R de fábrica, pero podemos instalar un complemento para solucionarlo.
