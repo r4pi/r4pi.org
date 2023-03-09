@@ -41,5 +41,12 @@ The site can then be edited as required.
 The build the site after changes, run:
 
 ```
-mkdocs build
+make build
 ```
+
+To serve a local build of the site use:
+
+```
+make serve
+```
+
