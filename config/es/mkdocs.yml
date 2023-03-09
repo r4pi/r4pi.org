@@ -1,0 +1,61 @@
+site_name: R for the Raspberry Pi
+repo_url: https://github.com/r4pi
+repo_name: R4Pi GitHub
+edit_uri: r4pi.org/edit/main/content
+docs_dir: ../../content/es
+site_dir: ../../docs/es
+theme: 
+  name: material
+  logo: assets/images/r4pi-small-white.png
+  language: es
+  custom_dir: ../../overrides/
+  features:
+    - content.action.edit
+    - content.action.view
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+nav:
+  - Home: index.md
+  - Documentacion:
+    - docs/installation.md
+    - docs/using_r.md
+    - docs/install_packages.md
+    - docs/ide.md
+    - docs/further_reading.md
+  - news/index.md
+extra_css:
+  - assets/css/extra.css
+copyright: Copyright &copy; 2023 The R4Pi Team
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@r4pi
+      name: R4Pi on Fosstodon
+    - icon: fontawesome/brands/github
+      link: https://github.com/r4pi
+      name: R4Pi on GitHub
+markdown_extensions:
+  - md_in_html
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Español
+      link: /es/
+      lang: es
+

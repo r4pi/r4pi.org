@@ -7,7 +7,7 @@ is where many R users on Linux will start.
 
 There are two ways to start R. If you're using the Raspberry Pi OS desktop, you can start R through the menu as shown below.
 
-![R4Pi menu item on Raspberry PI OS](images/r4pi_menu.png)
+![R4Pi menu item on Raspberry PI OS](../assets/images/docs/r4pi_menu.png)
 
 Alternatively, you can start an interactive R session via the terminal, by typing `R` at the command prompt.
 
@@ -130,7 +130,7 @@ This demo will open another window, and display some pre-canned plots created wi
 really powerful graphics system and the built in plotting tools are great, however, if you want to take your plots to
 the next level check out the '[ggplot2](https://ggplot2.tidyverse.org)' package.
 
-![](/images/using_r_demo_screenshot.png)
+![](../assets/images/using_r_demo_screenshot.png)
 
 To cycle through the demo plots, make sure the terminal window has focus and hit return.
 

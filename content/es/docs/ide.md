@@ -16,7 +16,7 @@ Puedes instalarlo desde los repositorios predeterminados de Raspberry Pi usando 
 
 Busca "código" o encuéntralo en la sección "Programación".
 
-![Agregar/Remover programas](/docs/images/add-remove-software.png)
+![Agregar/Remover programas](../../assets/images/docs/add-remove-software.png)
 
 Una vez que VSCode está instalado, debemos configurarlo para usarlo con R.
 
@@ -34,7 +34,7 @@ Para instalarlo, sigue estos pasos:
 * Selecciona la extensión "R" por REditorSupport
 * Haz clic en el botón "instalar"
 
-![Instala el complemento R para VSCode](/docs/images/vscode-r-extension.png)
+![Instala el complemento R para VSCode](../../assets/images/docs/vscode-r-extension.png)
 
 Una vez que el complemento esté instalado, estarás listo para comenzar a utilizarlo.
 
@@ -43,6 +43,6 @@ Una vez que el complemento esté instalado, estarás listo para comenzar a utili
 Ahora que el complemento está instalado, VSCode resaltará automáticamente la sintaxis de los archivos que tienen la extensión ".R".
 Además, si colocas el cursor en una línea particular en un archivo R y presionas ctrl+enter, esa línea se ejecutará en una consola R y el cursor se moverá a la siguiente línea. Puedes usar esto para recorrer un archivo una línea a la vez.
 
-![Resaltado de sintaxis y un gráfico creado en VSCode](/docs/images/r4pi-vscode-penguins.png)
+![Resaltado de sintaxis y un gráfico creado en VSCode](../../assets/images/docs/r4pi-vscode-penguins.png)
 
 Puedes leer más sobre las características del complemento R en la página "Detalles" de la extensión en VSCode.

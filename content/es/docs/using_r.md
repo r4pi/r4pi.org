@@ -6,7 +6,7 @@ R tiene su propio REPL ([Read-eval-print loop](https://en.wikipedia.org/wiki/Rea
 
 Hay dos formas de iniciar R. Si estás utilizando el escritorio del sistema operativo Raspberry Pi, puedes iniciar R a través del menú como se muestra a continuación.
 
-![Elemento de menú R4Pi en Raspberry PI OS](/docs/images/r4pi_menu.png)
+![Elemento de menú R4Pi en Raspberry PI OS](../../assets/images/docs/r4pi_menu.png)
 
 Alternativamente, puedes iniciar una sesión R interactiva a través de la terminal, escribiendo `R` en el símbolo del sistema.
 
@@ -117,7 +117,7 @@ Prueba esta primero:
 
 Esta demostración abrirá otra ventana y mostrará algunos gráficos preestablecidos creados con las herramientas de trazado integradas. R tiene un sistema de gráficos realmente potente y las herramientas de trazado integradas son geniales, sin embargo, si deseas llevar tus gráficos al siguiente nivel, consulta el paquete '[ggplot2](https://ggplot2.tidyverse.org)'.
 
-![](/images/using_r_demo_screenshot.png)
+![](../../assets/images/using_r_demo_screenshot.png)
 
 Para recorrer los gráficos de demostración, asegúrate de que la ventana de la terminal tenga el foco y presiona enter.
 

@@ -1,7 +1,7 @@
 # R para la Raspberry Pi
 
 <figure markdown>
-![R4Pi Logo](../images/r4pi-small.png)
+![R4Pi Logo](assets/images/r4pi-small.png)
 </figure>
 
 El objetivo de r4pi.org es proveer una versión de R actualizada para la familia de computadoras Raspberry Pi.
@@ -20,7 +20,7 @@ Proporcionamos compilaciones actualizadas de R y también tomamos una serie de l
 
 Es posible escribir código R en cualquier editor de texto, y varios editores de texto y entornos de desarrollo integrado (IDE por sus siglas en inglés) disponibles para la Pi soportan R directamente listo para usar o, como en la captura de pantalla de VSCode a continuación, con la adición de un complemento.
 
-![](../docs/images/r4pi-vscode-penguins.png)
+![](assets/images/docs/r4pi-vscode-penguins.png)
 
 La captura de pantalla anterior muestra algunas de las capacidades analíticas y de trazado de R con código tomado de la [web del paquete "palmerpenguins" ](https://allisonhorst.github.io/palmerpenguins/).
 

@@ -2,12 +2,13 @@ site_name: R for the Raspberry Pi
 repo_url: https://github.com/r4pi
 repo_name: R4Pi GitHub
 edit_uri: r4pi.org/edit/main/content
-docs_dir: content
+docs_dir: content/en
 site_dir: docs
 theme: 
   name: material
-  logo: images/r4pi-small-white.png
+  logo: assets/images/r4pi-small-white.png
   language: en
+  custom_dir: overrides/
   features:
     - content.action.edit
     - content.action.view
@@ -28,6 +29,7 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 nav:
+  - Home: index.md
   - Documentation:
     - docs/installation.md
     - docs/using_r.md
@@ -36,7 +38,7 @@ nav:
     - docs/further_reading.md
   - news/index.md
 extra_css:
-  - css/extra.css
+  - assets/css/extra.css
 copyright: Copyright &copy; 2023 The R4Pi Team
 extra:
   social:

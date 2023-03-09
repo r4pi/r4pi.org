@@ -1,7 +1,7 @@
 # R for the Raspberry Pi
 
 <figure markdown>
-![R4Pi Logo](images/r4pi-small.png)
+![R4Pi Logo](assets/images/r4pi-small.png)
 </figure>
 
 The aim of r4pi.org is to provide an up-to-date version of R for the Raspberry Pi family of computers.
@@ -22,7 +22,7 @@ for use on the Pi to make installation fast and simple.
 It's possible to write R code in any text editor and a number of the text editors and IDEs available for the Pi support
 R either straight out-of-the-box or, as in the VSCode screenshot below, with the addition of a plugin.
 
-![](docs/images/r4pi-vscode-penguins.png)
+![](assets/images/docs/r4pi-vscode-penguins.png)
 
 The screenshot above shows some of the analytical and plotting capabilities of R with code borrowed from the 
 ["palmerpenguins" package website](https://allisonhorst.github.io/palmerpenguins/).

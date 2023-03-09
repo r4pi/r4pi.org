@@ -20,7 +20,7 @@ You can install it from the default Raspberry Pi repos using the "Add/Remove sof
 
 Search for "code" or find it in the "Programming" section.
 
-![Add/Remove software](images/add-remove-software.png)
+![Add/Remove software](../assets/images/docs/add-remove-software.png)
 
 Once VSCode is installed we need to configure it for use with R.
 
@@ -39,7 +39,7 @@ To install it, follow these steps:
 * Select the "R" extension by REditorSupport
 * Click the "install" button
 
-![Install the R plugin for VSCode](images/vscode-r-extension.png)
+![Install the R plugin for VSCode](../assets/images/docs/vscode-r-extension.png)
 
 Once the plugin is installed, you're ready to start using it.
 
@@ -50,6 +50,6 @@ extension.
 In addition, if you place your cursor on a particular line in an R file and press ctrl+enter, that line will be executed
 in an R console and the cursor will move to the next line. You can use this to step through a file one line at a time.
 
-![Syntax highlighting and a plot created in VSCode](images/r4pi-vscode-penguins.png)
+![Syntax highlighting and a plot created in VSCode](../assets/images/docs/r4pi-vscode-penguins.png)
 
 You can read more about the R plugin's features on the extension's "Details" page in VSCode.
