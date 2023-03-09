@@ -1,0 +1,40 @@
+# Controls when the action will run, in this case a schedule.
+on:
+  push:
+    branches:
+      - main
+  
+  workflow_dispatch:
+
+name: rmarkdown-render
+
+jobs:
+  rmdrender:
+    runs-on: ubuntu-22.04
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: make a virtual environment
+        run: python3 -m venv venv
+
+      - name: activate virtual environment
+        run: source venv/bin/activate
+
+      - name: install python deps
+        run: python3 -m pip install -r requirements.txt
+
+      - name: build the site
+        run: make
+
+      - name: git config
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "gh-actions committer"
+      
+      - name: Push the changes back to the repo
+        run: |
+          git add -f docs/*
+          git commit -am "Automated GitHub action build"
+          git push --force --set-upstream origin gh-pages
