@@ -15,6 +15,13 @@ Please see the instructions at [R4Pi.org](https://r4pi.org) for detailed install
 
 The website is built using mkdocs and mkdocs-material.
 
+## Auto-build
+
+There's a github action that pretty much does it all for you.
+
+
+## Manual build
+
 Create a virtual environment for the project.
 
 ```
@@ -49,4 +56,3 @@ To serve a local build of the site use:
 ```
 make serve
 ```
-
