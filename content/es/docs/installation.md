@@ -25,7 +25,8 @@ Esta es esencialmente la última versión de R disponible
 Antes de poder instalar la compilación r4pi de R, debe configurar el acceso al repositorio de software r4pi.org.
 
 ```bash
-curl -O  https://pkgs.r4pi.org/dl/r4pi-repo-conf_0.0.1-1_all.deb
+source /etc/os-release
+curl -O  https://pkgs.r4pi.org/dl/${VERSION_CODENAME}/r4pi-repo-conf_0.0.1-1_all.deb
 sudo dpkg -i  r4pi-repo-conf_0.0.1-1_all.deb
 sudo apt update
 ```
