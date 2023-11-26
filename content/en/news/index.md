@@ -1,6 +1,6 @@
 # News
 
-## 2023-09-26 - Raspberry Pi OS Bookworm support is (finally) here
+## 2023-11-26 - Raspberry Pi OS Bookworm support is (finally) here
 
 The installation instructions were updated to support Bookworm about a week ago and feedback so far has been positive.
 We didn’t want to abandon Bullseye users though, so the existing builds will continue for now.
