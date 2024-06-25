@@ -4,7 +4,7 @@
 ## Pre-requisites
 
 You must be running the official [Raspberry Pi OS](https://www.raspberrypi.org/software/operating-systems/)
-(previously called Raspbian) on your system and it must be up to date.
+(previously called Raspbian) or Ubuntu 24.04 (Noble Numbat) on your system and it must be up to date.
 
 Technically, the software should work on all versions of the Pi, however due to memory constraints with older versions
 and the Pi Zero, **we recommend at least a Raspberry Pi 4 with 2GB or more** of RAM.

@@ -35,6 +35,7 @@ nav:
     - docs/using_r.md
     - docs/install_packages.md
     - docs/ide.md
+    - docs/support.md
     - docs/further_reading.md
   - news/index.md
 extra_css:

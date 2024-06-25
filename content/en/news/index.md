@@ -1,5 +1,14 @@
 # News
 
+## 2024-06-25 - Announcing Ubuntu 24.04 (Noble Numbat) support
+
+We've been working on support for Ubuntu on Raspberry Pi boards for some time.
+Experimental Jammy builds were extensively tested by the team and now that Noble Numbat is here, we decided to make things official.
+
+The plan going forward is to support the current LTS version of Ubuntu, but this is subject to change as demand becomes clearer in the coming months.
+
+The supported OS versions will always be detailed on our [support page](/en/docs/support.md).
+
 ## 2023-11-26 - Raspberry Pi OS Bookworm support is (finally) here
 
 The installation instructions were updated to support Bookworm about a week ago and feedback so far has been positive.
@@ -11,7 +20,7 @@ We’ll try and move more quickly in the future.
 Finally, since the default OS install is now 64 bit for most systems, Bookworm will also be the first time we haven’t produced 32 bit builds.
 Our logs show very few users installing 32 bit packages, so hopefully the impact will be low.
 If this change impacts you negatively and you’re unable to upgrade to a 64 bit OS for whatever reason, please let us know.
-Bullseye builds (including 32 but) will continue until it looks like downloads have dried up.
+Bullseye builds (including 32 bit) will continue until it looks like downloads have dried up.
 
 The work involved in adding Bookworm support has already significantly improved our internal build processes and will hopefully help us to be more flexible in the future.
 
