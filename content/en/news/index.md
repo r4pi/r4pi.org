@@ -9,6 +9,8 @@ The plan going forward is to support the current LTS version of Ubuntu, but this
 
 The supported OS versions will always be detailed on our [support page](../../docs/support).
 
+---
+
 ## 2023-11-26 - Raspberry Pi OS Bookworm support is (finally) here
 
 The installation instructions were updated to support Bookworm about a week ago and feedback so far has been positive.
@@ -24,6 +26,7 @@ Bullseye builds (including 32 bit) will continue until it looks like downloads h
 
 The work involved in adding Bookworm support has already significantly improved our internal build processes and will hopefully help us to be more flexible in the future.
 
+---
 
 ## 2022-03-09 - Added a Spanish translation
 
@@ -49,4 +52,3 @@ be a lot more flexible with the site in the future.
 Hopefully you'll like the new dark mode too.
 
 ---
-
