@@ -19,11 +19,8 @@ jobs:
       - name: make a virtual environment
         run: python3 -m venv venv
 
-      - name: activate virtual environment
-        run: source venv/bin/activate
-
-      - name: install python deps
-        run: python3 -m pip install -r requirements.txt
+      - name: activate virtual environment and install deps
+        run: source venv/bin/activate && python3 -m pip install -r requirements.txt
 
       - name: build the site
         run: make
