@@ -7,7 +7,7 @@ Experimental Jammy builds were extensively tested by the team and now that Noble
 
 The plan going forward is to support the current LTS version of Ubuntu, but this is subject to change as demand becomes clearer in the coming months.
 
-The supported OS versions will always be detailed on our [support page](/en/docs/support.md).
+The supported OS versions will always be detailed on our [support page](../../docs/support).
 
 ## 2023-11-26 - Raspberry Pi OS Bookworm support is (finally) here
 
