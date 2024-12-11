@@ -7,7 +7,7 @@ site_dir: docs
 theme: 
   name: material
   logo: assets/images/r4pi-small-white.png
-  favicon: assets/images/r4pi-small-white.png
+  favicon: assets/images/r4pi-small.png
   language: en
   custom_dir: overrides/
   features:
