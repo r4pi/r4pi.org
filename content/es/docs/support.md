@@ -1,13 +1,13 @@
-# Supported Operating Systems
+# Sistemas Operativos Soportados
 
-Estimated dates are marked with a *
+Las fechas estimadas están marcadas con un *
 
-| Operating System                   | End of life date              |
-|------------------------------------|------------------------------:|
-| Ubuntu 24.04 Noble Numbat (64 bit) | 2029-04 *                     |
-| Raspberry Pi OS Bookworm (64 bit)  | 1 year after Trixie release * |
-| Raspberry Pi OS Bullseye (64 bit)  | 2024-10-31                    |
-| Raspberry Pi OS Bullseye (32 bit)  | 2024-10-31                    |
+| Sistema Operativo                  | Activo | Fecha del final de soporte                |
+|------------------------------------|--------|------------------------------------------:|
+| Ubuntu 24.04 Noble Numbat (64 bit) | Si     | 2029-04 *                                 |
+| Raspberry Pi OS Bookworm (64 bit)  | Si     | 1 año despues del lanzamiento de Trixie * |
+| Raspberry Pi OS Bullseye (64 bit)  | No     | 2024-10-31                                |
+| Raspberry Pi OS Bullseye (32 bit)  | No     | 2024-10-31                                |
 
-Naturally the above dates are subject to change.
-As an open-source project run and funded by volunteers, we may need to change the support offered from time to time.
+Naturalmente, las fechas de arriba están sugetas a cambios.
+Como un projecto de "código abierto" llevado y financiado por voluntarios, podriamos necesitar cambiar el soporte ofrecido de tiempo en tiempo.
