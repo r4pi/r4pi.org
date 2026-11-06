@@ -1,5 +1,12 @@
 # News
 
+## 2024-10-01 - Ubuntu 24.04 Support Ends Today
+
+Now that Posit are [producing ARM binaries for Ubuntu](https://p3m.dev) and, since they're obviously a lot better funded than this project is, they're also building *all the packages* so there's no longer a need for us to continue to build our subset.
+This allows us refocus fully on the Raspberry Pi community and its default OS, Raspberry Pi OS.
+Additionally, this frees up the builder that was previously being used for Ubuntu, which at some point, may help us increase the number of packages we can include in our subset.
+As always, if there's a CRAN package you'd really like to see included in the project, please let us know.
+
 ## 2024-06-25 - Announcing Ubuntu 24.04 (Noble Numbat) support
 
 We've been working on support for Ubuntu on Raspberry Pi boards for some time.
